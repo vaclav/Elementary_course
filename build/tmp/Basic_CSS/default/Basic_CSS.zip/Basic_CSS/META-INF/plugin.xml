@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<idea-plugin>
+  <id>Basic_CSS</id>
+  <name>Basic_CSS</name>
+  <version>1.0</version>
+  <depends>jetbrains.mps.core</depends>
+  <extensions defaultExtensionNs="com.intellij">
+    <mps.LanguageLibrary dir="/languages" />
+  </extensions>
+</idea-plugin>

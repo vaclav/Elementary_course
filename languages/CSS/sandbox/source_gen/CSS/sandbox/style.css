@@ -1,0 +1,7 @@
+table{
+  background-color : red;
+  font-family : sans-serif;
+}
+td, th{
+  padding : 8px;
+}

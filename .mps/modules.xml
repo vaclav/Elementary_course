@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="MPSProject">
+    <projectModules>
+      <modulePath path="$PROJECT_DIR$/languages/CSS/CSS.mpl" folder="" />
+      <modulePath path="$PROJECT_DIR$/languages/CSS/sandbox/CSS.sandbox.msd" folder="" />
+      <modulePath path="$PROJECT_DIR$/languages/Furniture/Furniture.mpl" folder="" />
+      <modulePath path="$PROJECT_DIR$/languages/Furniture/sandbox/Furniture.sandbox.msd" folder="" />
+      <modulePath path="$PROJECT_DIR$/languages/HTML/HTML.mpl" folder="" />
+      <modulePath path="$PROJECT_DIR$/languages/HTML/sandbox/HTML.sandbox.msd" folder="" />
+      <modulePath path="$PROJECT_DIR$/solutions/Basic_CSS.build/Basic_CSS.build.msd" folder="" />
+    </projectModules>
+  </component>
+</project>
