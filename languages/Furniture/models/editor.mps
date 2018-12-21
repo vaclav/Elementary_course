@@ -35,9 +35,6 @@
       <concept id="1080736578640" name="jetbrains.mps.lang.editor.structure.BaseEditorComponent" flags="ig" index="2wURMF">
         <child id="1080736633877" name="cellModel" index="2wV5jI" />
       </concept>
-      <concept id="3547227755871693971" name="jetbrains.mps.lang.editor.structure.PredefinedSelector" flags="ng" index="2B6iha">
-        <property id="2162403111523065396" name="cellId" index="1lyBwo" />
-      </concept>
       <concept id="1638911550608571617" name="jetbrains.mps.lang.editor.structure.TransformationMenu_Default" flags="ng" index="IW6AY" />
       <concept id="1638911550608610798" name="jetbrains.mps.lang.editor.structure.QueryFunction_TransformationMenu_Execute" flags="ig" index="IWg2L" />
       <concept id="1638911550608610278" name="jetbrains.mps.lang.editor.structure.TransformationMenuPart_Action" flags="ng" index="IWgqT">
@@ -106,11 +103,6 @@
       <concept id="5624877018228267058" name="jetbrains.mps.lang.editor.structure.ITransformationMenu" flags="ng" index="3INCJE">
         <child id="1638911550608572412" name="sections" index="IW6Ez" />
       </concept>
-      <concept id="3647146066980922272" name="jetbrains.mps.lang.editor.structure.SelectInEditorOperation" flags="nn" index="1OKiuA">
-        <child id="1948540814633499358" name="editorContext" index="lBI5i" />
-        <child id="1948540814635895774" name="cellSelector" index="lGT1i" />
-      </concept>
-      <concept id="1161622981231" name="jetbrains.mps.lang.editor.structure.ConceptFunctionParameter_editorContext" flags="nn" index="1Q80Hx" />
       <concept id="7980428675268276156" name="jetbrains.mps.lang.editor.structure.TransformationMenuSection" flags="ng" index="1Qtc8_">
         <child id="7980428675268276157" name="locations" index="1Qtc8$" />
         <child id="7980428675268276159" name="parts" index="1Qtc8A" />
@@ -415,25 +407,6 @@
                   </node>
                 </node>
               </node>
-              <node concept="3clFbF" id="66xXmRs8YUT" role="3cqZAp">
-                <node concept="2OqwBi" id="66xXmRs8YUU" role="3clFbG">
-                  <node concept="7Obwk" id="66xXmRs8YUV" role="2Oq$k0" />
-                  <node concept="1OKiuA" id="66xXmRs8YUW" role="2OqNvi">
-                    <node concept="1Q80Hx" id="66xXmRs8YUX" role="lBI5i" />
-                  </node>
-                </node>
-              </node>
-              <node concept="3clFbF" id="66xXmRs8YUY" role="3cqZAp">
-                <node concept="2OqwBi" id="66xXmRs8YUZ" role="3clFbG">
-                  <node concept="7Obwk" id="66xXmRs8YV0" role="2Oq$k0" />
-                  <node concept="1OKiuA" id="66xXmRs8YV1" role="2OqNvi">
-                    <node concept="1Q80Hx" id="66xXmRs8YV2" role="lBI5i" />
-                    <node concept="2B6iha" id="66xXmRs8YV3" role="lGT1i">
-                      <property role="1lyBwo" value="mostRelevant" />
-                    </node>
-                  </node>
-                </node>
-              </node>
             </node>
           </node>
         </node>
@@ -468,25 +441,6 @@
                     <node concept="7Obwk" id="66xXmRs8Ldc" role="2Oq$k0" />
                     <node concept="3TrcHB" id="66xXmRs8Ldd" role="2OqNvi">
                       <ref role="3TsBF5" to="wkqd:66xXmRs84lt" resolve="quantity" />
-                    </node>
-                  </node>
-                </node>
-              </node>
-              <node concept="3clFbF" id="5wEXO4WjY8I" role="3cqZAp">
-                <node concept="2OqwBi" id="5wEXO4WjY8J" role="3clFbG">
-                  <node concept="7Obwk" id="5wEXO4WjY8K" role="2Oq$k0" />
-                  <node concept="1OKiuA" id="5wEXO4WjY8L" role="2OqNvi">
-                    <node concept="1Q80Hx" id="5wEXO4WjY8M" role="lBI5i" />
-                  </node>
-                </node>
-              </node>
-              <node concept="3clFbF" id="5wEXO4WjY8N" role="3cqZAp">
-                <node concept="2OqwBi" id="5wEXO4WjY8O" role="3clFbG">
-                  <node concept="7Obwk" id="5wEXO4WjY8P" role="2Oq$k0" />
-                  <node concept="1OKiuA" id="5wEXO4WjY8Q" role="2OqNvi">
-                    <node concept="1Q80Hx" id="5wEXO4WjY8R" role="lBI5i" />
-                    <node concept="2B6iha" id="5wEXO4WjY8S" role="lGT1i">
-                      <property role="1lyBwo" value="mostRelevant" />
                     </node>
                   </node>
                 </node>
