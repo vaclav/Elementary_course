@@ -17,6 +17,7 @@
     <import index="gsia" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/java:javax.swing.event(JDK/)" />
     <import index="wkqd" ref="r:e44b24ff-876f-47eb-9c98-9fe11b493d00(Furniture.structure)" implicit="true" />
     <import index="tpck" ref="r:00000000-0000-4000-0000-011c89590288(jetbrains.mps.lang.core.structure)" implicit="true" />
+    <import index="cj4x" ref="1ed103c3-3aa6-49b7-9c21-6765ee11f224/java:jetbrains.mps.openapi.editor(MPS.Editor/)" implicit="true" />
   </imports>
   <registry>
     <language id="18bc6592-03a6-4e29-a83a-7ff23bde13ba" name="jetbrains.mps.lang.editor">
@@ -103,6 +104,7 @@
       <concept id="5624877018228267058" name="jetbrains.mps.lang.editor.structure.ITransformationMenu" flags="ng" index="3INCJE">
         <child id="1638911550608572412" name="sections" index="IW6Ez" />
       </concept>
+      <concept id="1161622981231" name="jetbrains.mps.lang.editor.structure.ConceptFunctionParameter_editorContext" flags="nn" index="1Q80Hx" />
       <concept id="7980428675268276156" name="jetbrains.mps.lang.editor.structure.TransformationMenuSection" flags="ng" index="1Qtc8_">
         <child id="7980428675268276157" name="locations" index="1Qtc8$" />
         <child id="7980428675268276159" name="parts" index="1Qtc8A" />
@@ -116,6 +118,7 @@
         <child id="1068498886297" name="rValue" index="37vLTx" />
         <child id="1068498886295" name="lValue" index="37vLTJ" />
       </concept>
+      <concept id="1202948039474" name="jetbrains.mps.baseLanguage.structure.InstanceMethodCallOperation" flags="nn" index="liA8E" />
       <concept id="1197027756228" name="jetbrains.mps.baseLanguage.structure.DotExpression" flags="nn" index="2OqwBi">
         <child id="1197027771414" name="operand" index="2Oq$k0" />
         <child id="1197027833540" name="operation" index="2OqNvi" />
@@ -139,6 +142,9 @@
       <concept id="1068581242875" name="jetbrains.mps.baseLanguage.structure.PlusExpression" flags="nn" index="3cpWs3" />
       <concept id="1068581242869" name="jetbrains.mps.baseLanguage.structure.MinusExpression" flags="nn" index="3cpWsd" />
       <concept id="1081506762703" name="jetbrains.mps.baseLanguage.structure.GreaterThanExpression" flags="nn" index="3eOSWO" />
+      <concept id="1204053956946" name="jetbrains.mps.baseLanguage.structure.IMethodCall" flags="ng" index="1ndlxa">
+        <reference id="1068499141037" name="baseMethodDeclaration" index="37wK5l" />
+      </concept>
       <concept id="1081773326031" name="jetbrains.mps.baseLanguage.structure.BinaryOperation" flags="nn" index="3uHJSO">
         <child id="1081773367579" name="rightExpression" index="3uHU7w" />
         <child id="1081773367580" name="leftExpression" index="3uHU7B" />
@@ -407,6 +413,19 @@
                   </node>
                 </node>
               </node>
+              <node concept="3clFbF" id="3jhmUfPaHtf" role="3cqZAp">
+                <node concept="2OqwBi" id="3jhmUfPaIia" role="3clFbG">
+                  <node concept="2OqwBi" id="3jhmUfPaHOw" role="2Oq$k0">
+                    <node concept="1Q80Hx" id="3jhmUfPaHtd" role="2Oq$k0" />
+                    <node concept="liA8E" id="3jhmUfPaIc1" role="2OqNvi">
+                      <ref role="37wK5l" to="cj4x:~EditorContext.getEditorComponent():jetbrains.mps.openapi.editor.EditorComponent" resolve="getEditorComponent" />
+                    </node>
+                  </node>
+                  <node concept="liA8E" id="3jhmUfPaIZ7" role="2OqNvi">
+                    <ref role="37wK5l" to="cj4x:~EditorComponent.update():void" resolve="update" />
+                  </node>
+                </node>
+              </node>
             </node>
           </node>
         </node>
@@ -442,6 +461,19 @@
                     <node concept="3TrcHB" id="66xXmRs8Ldd" role="2OqNvi">
                       <ref role="3TsBF5" to="wkqd:66xXmRs84lt" resolve="quantity" />
                     </node>
+                  </node>
+                </node>
+              </node>
+              <node concept="3clFbF" id="3jhmUfPalKs" role="3cqZAp">
+                <node concept="2OqwBi" id="3jhmUfPanYk" role="3clFbG">
+                  <node concept="2OqwBi" id="3jhmUfPam6I" role="2Oq$k0">
+                    <node concept="1Q80Hx" id="3jhmUfPalKq" role="2Oq$k0" />
+                    <node concept="liA8E" id="3jhmUfPanSk" role="2OqNvi">
+                      <ref role="37wK5l" to="cj4x:~EditorContext.getEditorComponent():jetbrains.mps.openapi.editor.EditorComponent" resolve="getEditorComponent" />
+                    </node>
+                  </node>
+                  <node concept="liA8E" id="3jhmUfPapnq" role="2OqNvi">
+                    <ref role="37wK5l" to="cj4x:~EditorComponent.update():void" resolve="update" />
                   </node>
                 </node>
               </node>

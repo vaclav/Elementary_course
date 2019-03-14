@@ -125,6 +125,7 @@ public class Project_Component_TransformationMenu extends TransformationMenuBase
         @Override
         public void execute(@NotNull String pattern) {
           SPropertyOperations.assign(_context.getNode(), MetaAdapterFactory.getProperty(0xba1c46a5482045d5L, 0x9b2c6521c394c581L, 0x5418fa6ab5818106L, 0x61a1f56ddc20455dL, "quantity"), SPropertyOperations.getInteger(_context.getNode(), MetaAdapterFactory.getProperty(0xba1c46a5482045d5L, 0x9b2c6521c394c581L, 0x5418fa6ab5818106L, 0x61a1f56ddc20455dL, "quantity")) + 1);
+          _context.getEditorContext().getEditorComponent().update();
         }
 
 
@@ -184,6 +185,7 @@ public class Project_Component_TransformationMenu extends TransformationMenuBase
         @Override
         public void execute(@NotNull String pattern) {
           SPropertyOperations.assign(_context.getNode(), MetaAdapterFactory.getProperty(0xba1c46a5482045d5L, 0x9b2c6521c394c581L, 0x5418fa6ab5818106L, 0x61a1f56ddc20455dL, "quantity"), SPropertyOperations.getInteger(_context.getNode(), MetaAdapterFactory.getProperty(0xba1c46a5482045d5L, 0x9b2c6521c394c581L, 0x5418fa6ab5818106L, 0x61a1f56ddc20455dL, "quantity")) - 1);
+          _context.getEditorContext().getEditorComponent().update();
         }
 
         @Override
