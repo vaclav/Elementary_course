@@ -385,14 +385,14 @@
               </node>
             </node>
             <node concept="liA8E" id="13" role="2OqNvi">
-              <ref role="37wK5l" to="kpbf:~TextGenSupport.appendNode(org.jetbrains.mps.openapi.model.SNode):void" resolve="appendNode" />
+              <ref role="37wK5l" to="kpbf:~TextGenSupport.appendNode(org.jetbrains.mps.openapi.model.SNode)" resolve="appendNode" />
               <node concept="2OqwBi" id="17" role="37wK5m">
                 <node concept="2OqwBi" id="19" role="2Oq$k0">
                   <node concept="37vLTw" id="1c" role="2Oq$k0">
                     <ref role="3cqZAo" node="_" resolve="ctx" />
                   </node>
                   <node concept="liA8E" id="1d" role="2OqNvi">
-                    <ref role="37wK5l" to="yfwt:~TextGenContext.getPrimaryInput():org.jetbrains.mps.openapi.model.SNode" resolve="getPrimaryInput" />
+                    <ref role="37wK5l" to="yfwt:~TextGenContext.getPrimaryInput()" resolve="getPrimaryInput" />
                   </node>
                   <node concept="cd27G" id="1e" role="lGtFl">
                     <node concept="3u3nmq" id="1f" role="cd27D">
@@ -615,7 +615,7 @@
                       <ref role="3cqZAo" node="2b" resolve="outline" />
                     </node>
                     <node concept="liA8E" id="2_" role="2OqNvi">
-                      <ref role="37wK5l" to="yfwt:~TextGenModelOutline.registerTextUnit(java.lang.String,java.lang.String,java.nio.charset.Charset,org.jetbrains.mps.openapi.model.SNode...):void" resolve="registerTextUnit" />
+                      <ref role="37wK5l" to="yfwt:~TextGenModelOutline.registerTextUnit(java.lang.String,java.lang.String,java.nio.charset.Charset,org.jetbrains.mps.openapi.model.SNode...)" resolve="registerTextUnit" />
                       <node concept="3K4zz7" id="2A" role="37wK5m">
                         <node concept="1eOMI4" id="2C" role="3K4GZi">
                           <node concept="3cpWs3" id="2F" role="1eOMHV">
@@ -656,11 +656,11 @@
                     <ref role="3cqZAo" node="2i" resolve="root" />
                   </node>
                   <node concept="liA8E" id="2P" role="2OqNvi">
-                    <ref role="37wK5l" to="mhbf:~SNode.getConcept():org.jetbrains.mps.openapi.language.SConcept" resolve="getConcept" />
+                    <ref role="37wK5l" to="mhbf:~SNode.getConcept()" resolve="getConcept" />
                   </node>
                 </node>
                 <node concept="liA8E" id="2N" role="2OqNvi">
-                  <ref role="37wK5l" to="wyt6:~Object.equals(java.lang.Object):boolean" resolve="equals" />
+                  <ref role="37wK5l" to="wyt6:~Object.equals(java.lang.Object)" resolve="equals" />
                   <node concept="35c_gC" id="2Q" role="37wK5m">
                     <ref role="35c_gD" to="clae:7vyus25LtHB" resolve="HtmlFile" />
                   </node>
@@ -680,11 +680,11 @@
                 <ref role="3cqZAo" node="2b" resolve="outline" />
               </node>
               <node concept="liA8E" id="2V" role="2OqNvi">
-                <ref role="37wK5l" to="yfwt:~TextGenModelOutline.getModel():org.jetbrains.mps.openapi.model.SModel" resolve="getModel" />
+                <ref role="37wK5l" to="yfwt:~TextGenModelOutline.getModel()" resolve="getModel" />
               </node>
             </node>
             <node concept="liA8E" id="2T" role="2OqNvi">
-              <ref role="37wK5l" to="mhbf:~SModel.getRootNodes():java.lang.Iterable" resolve="getRootNodes" />
+              <ref role="37wK5l" to="mhbf:~SModel.getRootNodes()" resolve="getRootNodes" />
             </node>
           </node>
         </node>
@@ -705,7 +705,7 @@
               <ref role="3cqZAo" node="2Z" resolve="node" />
             </node>
             <node concept="liA8E" id="33" role="2OqNvi">
-              <ref role="37wK5l" to="mhbf:~SNode.getName():java.lang.String" resolve="getName" />
+              <ref role="37wK5l" to="mhbf:~SNode.getName()" resolve="getName" />
             </node>
           </node>
         </node>

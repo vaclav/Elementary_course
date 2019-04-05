@@ -15,7 +15,7 @@
       <unit at="10,0,28,0" name="HTML.structure.LanguageConceptSwitch" />
     </file>
     <file name="StructureAspectDescriptor.java">
-      <unit at="15,0,59,0" name="HTML.structure.StructureAspectDescriptor" />
+      <unit at="15,0,66,0" name="HTML.structure.StructureAspectDescriptor" />
     </file>
   </root>
   <root nodeRef="r:b6416648-d0a7-4672-b142-37b7f608514b(HTML.structure)/8638600903035050855">
@@ -37,21 +37,21 @@
     </file>
     <file name="StructureAspectDescriptor.java">
       <node id="8638600903035050855" at="16,0,17,0" concept="1" trace="myConceptHtmlFile" />
-      <node id="8638600903035050855" at="32,42,33,33" concept="4" />
-      <node id="8638600903035050855" at="48,66,49,147" concept="3" />
-      <node id="8638600903035050855" at="49,147,50,33" concept="0" />
-      <node id="8638600903035050855" at="50,33,51,71" concept="0" />
-      <node id="8638600903035050855" at="51,71,52,91" concept="0" />
-      <node id="8638600903035050855" at="52,91,53,17" concept="0" />
-      <node id="8638600903035050856" at="53,17,54,202" concept="0" />
-      <node id="8638600903035050855" at="54,202,55,25" concept="0" />
-      <node id="8638600903035050855" at="55,25,56,22" concept="4" />
-      <node id="8638600903035050855" at="48,0,58,0" concept="6" trace="createDescriptorForHtmlFile#()Ljetbrains/mps/smodel/runtime/ConceptDescriptor;" />
-      <scope id="8638600903035050855" at="32,42,33,33" />
-      <scope id="8638600903035050855" at="48,66,56,22">
+      <node id="8638600903035050855" at="39,42,40,33" concept="4" />
+      <node id="8638600903035050855" at="55,66,56,147" concept="3" />
+      <node id="8638600903035050855" at="56,147,57,33" concept="0" />
+      <node id="8638600903035050855" at="57,33,58,71" concept="0" />
+      <node id="8638600903035050855" at="58,71,59,91" concept="0" />
+      <node id="8638600903035050855" at="59,91,60,17" concept="0" />
+      <node id="8638600903035050856" at="60,17,61,202" concept="0" />
+      <node id="8638600903035050855" at="61,202,62,25" concept="0" />
+      <node id="8638600903035050855" at="62,25,63,22" concept="4" />
+      <node id="8638600903035050855" at="55,0,65,0" concept="6" trace="createDescriptorForHtmlFile#()Ljetbrains/mps/smodel/runtime/ConceptDescriptor;" />
+      <scope id="8638600903035050855" at="39,42,40,33" />
+      <scope id="8638600903035050855" at="55,66,63,22">
         <var name="b" id="8638600903035050855" />
       </scope>
-      <scope id="8638600903035050855" at="48,0,58,0" />
+      <scope id="8638600903035050855" at="55,0,65,0" />
     </file>
   </root>
 </debug-info>

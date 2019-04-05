@@ -418,11 +418,11 @@
                   <node concept="2OqwBi" id="3jhmUfPaHOw" role="2Oq$k0">
                     <node concept="1Q80Hx" id="3jhmUfPaHtd" role="2Oq$k0" />
                     <node concept="liA8E" id="3jhmUfPaIc1" role="2OqNvi">
-                      <ref role="37wK5l" to="cj4x:~EditorContext.getEditorComponent():jetbrains.mps.openapi.editor.EditorComponent" resolve="getEditorComponent" />
+                      <ref role="37wK5l" to="cj4x:~EditorContext.getEditorComponent()" resolve="getEditorComponent" />
                     </node>
                   </node>
                   <node concept="liA8E" id="3jhmUfPaIZ7" role="2OqNvi">
-                    <ref role="37wK5l" to="cj4x:~EditorComponent.update():void" resolve="update" />
+                    <ref role="37wK5l" to="cj4x:~EditorComponent.update()" resolve="update" />
                   </node>
                 </node>
               </node>
@@ -469,11 +469,11 @@
                   <node concept="2OqwBi" id="3jhmUfPam6I" role="2Oq$k0">
                     <node concept="1Q80Hx" id="3jhmUfPalKq" role="2Oq$k0" />
                     <node concept="liA8E" id="3jhmUfPanSk" role="2OqNvi">
-                      <ref role="37wK5l" to="cj4x:~EditorContext.getEditorComponent():jetbrains.mps.openapi.editor.EditorComponent" resolve="getEditorComponent" />
+                      <ref role="37wK5l" to="cj4x:~EditorContext.getEditorComponent()" resolve="getEditorComponent" />
                     </node>
                   </node>
                   <node concept="liA8E" id="3jhmUfPapnq" role="2OqNvi">
-                    <ref role="37wK5l" to="cj4x:~EditorComponent.update():void" resolve="update" />
+                    <ref role="37wK5l" to="cj4x:~EditorComponent.update()" resolve="update" />
                   </node>
                 </node>
               </node>

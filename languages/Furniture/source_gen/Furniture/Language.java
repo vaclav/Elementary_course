@@ -8,16 +8,11 @@ import java.util.Collection;
 import org.jetbrains.mps.openapi.language.SLanguage;
 import jetbrains.mps.smodel.runtime.ILanguageAspect;
 import jetbrains.mps.smodel.runtime.BehaviorAspectDescriptor;
-import jetbrains.mps.smodel.runtime.ConstraintsAspectDescriptor;
 import jetbrains.mps.openapi.editor.descriptor.EditorAspectDescriptor;
 import Furniture.editor.EditorAspectDescriptorImpl;
-import jetbrains.mps.openapi.intentions.IntentionAspectDescriptor;
-import Furniture.intentions.IntentionsDescriptor;
 import jetbrains.mps.smodel.runtime.StructureAspectDescriptor;
 import jetbrains.mps.smodel.runtime.ConceptPresentationAspect;
 import Furniture.structure.ConceptPresentationAspectImpl;
-import jetbrains.mps.lang.typesystem.runtime.IHelginsDescriptor;
-import Furniture.typesystem.TypesystemDescriptor;
 
 public class Language extends LanguageRuntime {
   private final SLanguageId myId;
@@ -49,23 +44,14 @@ public class Language extends LanguageRuntime {
     if (aspectClass == BehaviorAspectDescriptor.class) {
       return aspectClass.cast(new Furniture.behavior.BehaviorAspectDescriptor());
     }
-    if (aspectClass == ConstraintsAspectDescriptor.class) {
-      return aspectClass.cast(new Furniture.constraints.ConstraintsAspectDescriptor());
-    }
     if (aspectClass == EditorAspectDescriptor.class) {
       return aspectClass.cast(new EditorAspectDescriptorImpl());
-    }
-    if (aspectClass == IntentionAspectDescriptor.class) {
-      return aspectClass.cast(new IntentionsDescriptor());
     }
     if (aspectClass == StructureAspectDescriptor.class) {
       return aspectClass.cast(new Furniture.structure.StructureAspectDescriptor());
     }
     if (aspectClass == ConceptPresentationAspect.class) {
       return aspectClass.cast(new ConceptPresentationAspectImpl());
-    }
-    if (aspectClass == IHelginsDescriptor.class) {
-      return aspectClass.cast(new TypesystemDescriptor());
     }
     return null;
   }
