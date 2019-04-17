@@ -2,7 +2,7 @@ This project is part of JetBrains MPS Elementary Course https://stepik.org/cours
 
 Prerequisites
 --------------
-[MPS](https://www.jetbrains.com/mps/) version 2018.3 or higher
+[MPS](https://www.jetbrains.com/mps/) version 2019.1 or higher
 
 
 License
