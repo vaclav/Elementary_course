@@ -3,7 +3,7 @@
   <persistence version="9" />
   <languages>
     <use id="16004811-92b0-449f-957c-57094436be28" name="HTML" version="0" />
-    <use id="ceab5195-25ea-4f22-9b92-103b95ca8c0c" name="jetbrains.mps.lang.core" version="1" />
+    <use id="ceab5195-25ea-4f22-9b92-103b95ca8c0c" name="jetbrains.mps.lang.core" version="2" />
     <use id="479c7a8c-02f9-43b5-9139-d910cb22f298" name="jetbrains.mps.core.xml" version="0" />
   </languages>
   <imports />

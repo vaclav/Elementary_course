@@ -7,14 +7,19 @@ import jetbrains.mps.text.rt.TextGenContext;
 import jetbrains.mps.text.impl.TextGenSupport;
 import org.jetbrains.mps.openapi.model.SNode;
 import jetbrains.mps.lang.smodel.generator.smodelAdapter.SLinkOperations;
+import org.jetbrains.mps.openapi.language.SContainmentLink;
 import jetbrains.mps.smodel.adapter.structure.MetaAdapterFactory;
 
 public class CSS_File_TextGen extends TextGenDescriptorBase {
   @Override
   public void generateText(final TextGenContext ctx) {
     final TextGenSupport tgs = new TextGenSupport(ctx);
-    for (SNode item : SLinkOperations.getChildren(ctx.getPrimaryInput(), MetaAdapterFactory.getContainmentLink(0xb9f4bf860f3d4271L, 0x8f07abe516407b4aL, 0x6fc2a5dc202eb7a6L, 0x6fc2a5dc202ec008L, "rulesets"))) {
+    for (SNode item : SLinkOperations.getChildren(ctx.getPrimaryInput(), LINKS.rulesets$cku0)) {
       tgs.appendNode(item);
     }
+  }
+
+  private static final class LINKS {
+    /*package*/ static final SContainmentLink rulesets$cku0 = MetaAdapterFactory.getContainmentLink(0xb9f4bf860f3d4271L, 0x8f07abe516407b4aL, 0x6fc2a5dc202eb7a6L, 0x6fc2a5dc202ec008L, "rulesets");
   }
 }

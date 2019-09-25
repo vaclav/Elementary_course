@@ -23,7 +23,7 @@ public class Furniture_Style_StyleSheet {
   public static void apply_title(Style style, EditorCell editorCell) {
     SNode node = (editorCell == null ? null : editorCell.getSNode());
     EditorContext editorContext = (editorCell == null ? null : editorCell.getContext());
-    new Furniture_Style_StyleSheet.titleStyleClass(editorContext, node).apply(style, editorCell);
+    new titleStyleClass(editorContext, node).apply(style, editorCell);
   }
   /**
    * 
@@ -33,7 +33,7 @@ public class Furniture_Style_StyleSheet {
   public static void apply_number(Style style, EditorCell editorCell) {
     SNode node = (editorCell == null ? null : editorCell.getSNode());
     EditorContext editorContext = (editorCell == null ? null : editorCell.getContext());
-    new Furniture_Style_StyleSheet.numberStyleClass(editorContext, node).apply(style, editorCell);
+    new numberStyleClass(editorContext, node).apply(style, editorCell);
   }
   /**
    * 
@@ -43,7 +43,7 @@ public class Furniture_Style_StyleSheet {
   public static void apply_title_indent(Style style, EditorCell editorCell) {
     SNode node = (editorCell == null ? null : editorCell.getSNode());
     EditorContext editorContext = (editorCell == null ? null : editorCell.getContext());
-    new Furniture_Style_StyleSheet.title_indentStyleClass(editorContext, node).apply(style, editorCell);
+    new title_indentStyleClass(editorContext, node).apply(style, editorCell);
   }
 
   public static class titleStyleClass extends AbstractStyleClass {

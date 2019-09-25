@@ -7,15 +7,21 @@ import jetbrains.mps.text.rt.TextGenContext;
 import jetbrains.mps.text.impl.TextGenSupport;
 import org.jetbrains.mps.openapi.model.SNode;
 import jetbrains.mps.lang.smodel.generator.smodelAdapter.SLinkOperations;
+import org.jetbrains.mps.openapi.language.SContainmentLink;
 import jetbrains.mps.smodel.adapter.structure.MetaAdapterFactory;
 
 public class CSS_Ruleset_TextGen extends TextGenDescriptorBase {
   @Override
   public void generateText(final TextGenContext ctx) {
     final TextGenSupport tgs = new TextGenSupport(ctx);
-    for (SNode item : SLinkOperations.getChildren(ctx.getPrimaryInput(), MetaAdapterFactory.getContainmentLink(0xb9f4bf860f3d4271L, 0x8f07abe516407b4aL, 0x6fc2a5dc202eb7a7L, 0x6fc2a5dc202ebfbbL, "selectors"))) {
+    for (SNode item : SLinkOperations.getChildren(ctx.getPrimaryInput(), LINKS.selectors$9P71)) {
       tgs.appendNode(item);
     }
-    tgs.appendNode(SLinkOperations.getTarget(ctx.getPrimaryInput(), MetaAdapterFactory.getContainmentLink(0xb9f4bf860f3d4271L, 0x8f07abe516407b4aL, 0x6fc2a5dc202eb7a7L, 0x6fc2a5dc202ebfbdL, "block")));
+    tgs.appendNode(SLinkOperations.getTarget(ctx.getPrimaryInput(), LINKS.block$9P7Z));
+  }
+
+  private static final class LINKS {
+    /*package*/ static final SContainmentLink selectors$9P71 = MetaAdapterFactory.getContainmentLink(0xb9f4bf860f3d4271L, 0x8f07abe516407b4aL, 0x6fc2a5dc202eb7a7L, 0x6fc2a5dc202ebfbbL, "selectors");
+    /*package*/ static final SContainmentLink block$9P7Z = MetaAdapterFactory.getContainmentLink(0xb9f4bf860f3d4271L, 0x8f07abe516407b4aL, 0x6fc2a5dc202eb7a7L, 0x6fc2a5dc202ebfbdL, "block");
   }
 }

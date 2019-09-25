@@ -145,6 +145,7 @@
       </concept>
     </language>
     <language id="7866978e-a0f0-4cc7-81bc-4d213d9375e1" name="jetbrains.mps.lang.smodel">
+      <concept id="1966870290083281362" name="jetbrains.mps.lang.smodel.structure.EnumMember_NameOperation" flags="ng" index="24Tkf9" />
       <concept id="1179409122411" name="jetbrains.mps.lang.smodel.structure.Node_ConceptMethodCall" flags="nn" index="2qgKlT" />
       <concept id="1138056022639" name="jetbrains.mps.lang.smodel.structure.SPropertyAccess" flags="nn" index="3TrcHB">
         <reference id="1138056395725" name="property" index="3TsBF5" />
@@ -254,15 +255,18 @@
             <node concept="3zFVjK" id="5goYAEPz2pK" role="3zH0cK">
               <node concept="3clFbS" id="5goYAEPz2pL" role="2VODD2">
                 <node concept="3clFbF" id="5goYAEPz2pM" role="3cqZAp">
-                  <node concept="2OqwBi" id="5goYAEPz2pN" role="3clFbG">
-                    <node concept="2OqwBi" id="5goYAEPz2pO" role="2Oq$k0">
-                      <node concept="30H73N" id="5goYAEPz2pP" role="2Oq$k0" />
-                      <node concept="3TrEf2" id="5goYAEPz2pQ" role="2OqNvi">
-                        <ref role="3Tt5mk" to="wkqd:66xXmRs84lq" resolve="component" />
+                  <node concept="2OqwBi" id="1lUBeKb$xfU" role="3clFbG">
+                    <node concept="24Tkf9" id="1lUBeKb$xfW" role="2OqNvi" />
+                    <node concept="2OqwBi" id="5goYAEPz2pN" role="2Oq$k0">
+                      <node concept="2OqwBi" id="5goYAEPz2pO" role="2Oq$k0">
+                        <node concept="30H73N" id="5goYAEPz2pP" role="2Oq$k0" />
+                        <node concept="3TrEf2" id="5goYAEPz2pQ" role="2OqNvi">
+                          <ref role="3Tt5mk" to="wkqd:66xXmRs84lq" resolve="component" />
+                        </node>
                       </node>
-                    </node>
-                    <node concept="3TrcHB" id="5goYAEPz2pR" role="2OqNvi">
-                      <ref role="3TsBF5" to="wkqd:66xXmRs83hK" resolve="material" />
+                      <node concept="3TrcHB" id="5goYAEPz2pR" role="2OqNvi">
+                        <ref role="3TsBF5" to="wkqd:1lUBeKb$xfF" resolve="material" />
+                      </node>
                     </node>
                   </node>
                 </node>

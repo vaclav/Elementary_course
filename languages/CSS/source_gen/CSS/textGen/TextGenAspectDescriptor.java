@@ -10,6 +10,7 @@ import org.jetbrains.annotations.NotNull;
 import org.jetbrains.mps.openapi.language.SAbstractConcept;
 import jetbrains.mps.text.rt.TextGenModelOutline;
 import org.jetbrains.mps.openapi.model.SNode;
+import org.jetbrains.mps.openapi.language.SConcept;
 import jetbrains.mps.smodel.adapter.structure.MetaAdapterFactory;
 
 public class TextGenAspectDescriptor extends TextGenAspectBase {
@@ -39,7 +40,7 @@ public class TextGenAspectDescriptor extends TextGenAspectBase {
   @Override
   public void breakdownToUnits(@NotNull TextGenModelOutline outline) {
     for (SNode root : outline.getModel().getRootNodes()) {
-      if (root.getConcept().equals(MetaAdapterFactory.getConcept(0xb9f4bf860f3d4271L, 0x8f07abe516407b4aL, 0x6fc2a5dc202eb7a6L, "CSS.structure.CSS_File"))) {
+      if (root.getConcept().equals(CONCEPTS.CSS_File$97)) {
         String fname = getFileName_CSS_File(root);
         String ext = getFileExtension_CSS_File(root);
         outline.registerTextUnit((ext == null ? fname : (fname + '.' + ext)), root);
@@ -52,5 +53,9 @@ public class TextGenAspectDescriptor extends TextGenAspectBase {
   }
   private static String getFileExtension_CSS_File(SNode node) {
     return "css";
+  }
+
+  private static final class CONCEPTS {
+    /*package*/ static final SConcept CSS_File$97 = MetaAdapterFactory.getConcept(0xb9f4bf860f3d4271L, 0x8f07abe516407b4aL, 0x6fc2a5dc202eb7a6L, "CSS.structure.CSS_File");
   }
 }

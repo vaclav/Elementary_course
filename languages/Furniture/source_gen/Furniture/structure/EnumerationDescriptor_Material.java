@@ -5,50 +5,63 @@ package Furniture.structure;
 import jetbrains.mps.smodel.runtime.EnumerationDescriptorBase;
 import jetbrains.mps.smodel.adapter.ids.PrimitiveTypeId;
 import jetbrains.mps.smodel.runtime.EnumerationDescriptor;
+import jetbrains.mps.lang.smodel.EnumerationLiteralsIndex;
+import java.util.List;
 import org.jetbrains.annotations.Nullable;
 import org.jetbrains.annotations.NotNull;
-import java.util.Collection;
-import java.util.Arrays;
 
 public class EnumerationDescriptor_Material extends EnumerationDescriptorBase {
 
   public EnumerationDescriptor_Material() {
-    super(0xba1c46a5482045d5L, 0x9b2c6521c394c581L, 0x5418fa6ab58176b5L, "Material", "r:e44b24ff-876f-47eb-9c98-9fe11b493d00(Furniture.structure)/6059868634845640373", PrimitiveTypeId.STRING);
+    super(0xba1c46a5482045d5L, 0x9b2c6521c394c581L, 0x5418fa6ab58176b5L, "Material", "r:e44b24ff-876f-47eb-9c98-9fe11b493d00(Furniture.structure)/1547721959575524310", PrimitiveTypeId.STRING);
   }
 
-  private final EnumerationDescriptor.MemberDescriptor VALUE_Maple_0 = new EnumerationDescriptor.MemberDescriptor("Maple", "wood", "r:e44b24ff-876f-47eb-9c98-9fe11b493d00(Furniture.structure)/7035173945122763866", "Maple");
-  private final EnumerationDescriptor.MemberDescriptor VALUE_Oak_0 = new EnumerationDescriptor.MemberDescriptor("Oak", "metal", "r:e44b24ff-876f-47eb-9c98-9fe11b493d00(Furniture.structure)/7035173945122763867", "Oak");
-  private final EnumerationDescriptor.MemberDescriptor VALUE_Iron_0 = new EnumerationDescriptor.MemberDescriptor("Iron", "iron", "r:e44b24ff-876f-47eb-9c98-9fe11b493d00(Furniture.structure)/7035173945122763872", "Iron");
-  private final EnumerationDescriptor.MemberDescriptor VALUE_Steel_0 = new EnumerationDescriptor.MemberDescriptor("Steel", "steel", "r:e44b24ff-876f-47eb-9c98-9fe11b493d00(Furniture.structure)/7035173945122763879", "Steel");
+  private final EnumerationDescriptor.MemberDescriptor myMember_Maple_0 = new EnumerationDescriptor.MemberDescriptor("Maple", "wood", 0x61a1f56ddc20345aL, "r:e44b24ff-876f-47eb-9c98-9fe11b493d00(Furniture.structure)/1547721959575524312", "Maple", "Maple");
+  private final EnumerationDescriptor.MemberDescriptor myMember_Oak_0 = new EnumerationDescriptor.MemberDescriptor("Oak", "metal", 0x61a1f56ddc20345bL, "r:e44b24ff-876f-47eb-9c98-9fe11b493d00(Furniture.structure)/1547721959575524313", "Oak", "Oak");
+  private final EnumerationDescriptor.MemberDescriptor myMember_Iron_0 = new EnumerationDescriptor.MemberDescriptor("Iron", "iron", 0x61a1f56ddc203460L, "r:e44b24ff-876f-47eb-9c98-9fe11b493d00(Furniture.structure)/1547721959575524314", "Iron", "Iron");
+  private final EnumerationDescriptor.MemberDescriptor myMember_Steel_0 = new EnumerationDescriptor.MemberDescriptor("Steel", "steel", 0x61a1f56ddc203467L, "r:e44b24ff-876f-47eb-9c98-9fe11b493d00(Furniture.structure)/1547721959575524315", "Steel", "Steel");
+
+  private final EnumerationLiteralsIndex myIndex = EnumerationLiteralsIndex.build(0xba1c46a5482045d5L, 0x9b2c6521c394c581L, 0x5418fa6ab58176b5L, 0x61a1f56ddc20345aL, 0x61a1f56ddc20345bL, 0x61a1f56ddc203460L, 0x61a1f56ddc203467L);
+  private final List<EnumerationDescriptor.MemberDescriptor> myMembers = new EnumerationDescriptorBase.MembersList(myIndex, myMember_Maple_0, myMember_Oak_0, myMember_Iron_0, myMember_Steel_0);
 
   @Nullable
   @Override
   public EnumerationDescriptor.MemberDescriptor getDefault() {
-    return VALUE_Steel_0;
+    return myMember_Steel_0;
   }
 
   @NotNull
   @Override
-  public Collection<EnumerationDescriptor.MemberDescriptor> getMembers() {
-    return Arrays.asList(VALUE_Maple_0, VALUE_Oak_0, VALUE_Iron_0, VALUE_Steel_0);
+  public List<EnumerationDescriptor.MemberDescriptor> getMembers() {
+    return myMembers;
   }
 
   @Nullable
   @Override
-  public EnumerationDescriptor.MemberDescriptor getMember(@Nullable String string) {
-    if (string == null) {
+  public EnumerationDescriptor.MemberDescriptor getMember(@Nullable String memberName) {
+    if (memberName == null) {
       return null;
     }
-    switch (string) {
+    switch (memberName) {
       case "Maple":
-        return VALUE_Maple_0;
+        return myMember_Maple_0;
       case "Oak":
-        return VALUE_Oak_0;
+        return myMember_Oak_0;
       case "Iron":
-        return VALUE_Iron_0;
+        return myMember_Iron_0;
       case "Steel":
-        return VALUE_Steel_0;
+        return myMember_Steel_0;
     }
     return null;
+  }
+
+  @Nullable
+  @Override
+  public EnumerationDescriptor.MemberDescriptor getMember(long idValue) {
+    int index = myIndex.index(idValue);
+    if (index == -1) {
+      return null;
+    }
+    return myMembers.get(index);
   }
 }

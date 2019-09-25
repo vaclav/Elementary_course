@@ -2,7 +2,7 @@
 <model ref="r:92f402ed-ddd4-4b0f-bdc8-0e55c3208b64(CSS.editor)">
   <persistence version="9" />
   <languages>
-    <use id="18bc6592-03a6-4e29-a83a-7ff23bde13ba" name="jetbrains.mps.lang.editor" version="12" />
+    <use id="18bc6592-03a6-4e29-a83a-7ff23bde13ba" name="jetbrains.mps.lang.editor" version="13" />
   </languages>
   <imports>
     <import index="47t0" ref="r:59ac4b71-41ed-47d2-bf8b-0f44119e2363(CSS.structure)" implicit="true" />
@@ -82,7 +82,7 @@
       <node concept="3F0A7n" id="6Z2DtKwbG0h" role="3EZMnx">
         <ref role="1NtTu8" to="47t0:6Z2DtKwbFuC" resolve="property" />
         <node concept="VechU" id="6Z2DtKwbG0A" role="3F10Kt">
-          <property role="Vb096" value="red" />
+          <property role="Vb096" value="fLwANPn/red" />
         </node>
       </node>
       <node concept="3F0ifn" id="6Z2DtKwbG0n" role="3EZMnx">
@@ -91,7 +91,7 @@
       <node concept="3F0A7n" id="6Z2DtKwbG0v" role="3EZMnx">
         <ref role="1NtTu8" to="47t0:6Z2DtKwbFuE" resolve="value" />
         <node concept="VechU" id="6Z2DtKwbG0D" role="3F10Kt">
-          <property role="Vb096" value="DARK_BLUE" />
+          <property role="Vb096" value="g1_eI4o/darkBlue" />
         </node>
       </node>
       <node concept="l2Vlx" id="6Z2DtKwbG0d" role="2iSdaV" />
@@ -107,7 +107,7 @@
       <node concept="3F0ifn" id="5M4a$b5j9j8" role="3EZMnx">
         <property role="3F0ifm" value="xml" />
         <node concept="VechU" id="5M4a$b5j9ja" role="3F10Kt">
-          <property role="Vb096" value="darkGray" />
+          <property role="Vb096" value="fLJRk5B/darkGray" />
         </node>
       </node>
       <node concept="3F0A7n" id="5M4a$b5j9jb" role="3EZMnx">

@@ -6,6 +6,7 @@
     <classNode dependClassName="jetbrains.mps.smodel.adapter.structure.MetaAdapterFactory" />
     <classNode dependClassName="jetbrains.mps.text.impl.TextGenSupport" />
     <classNode dependClassName="jetbrains.mps.text.rt.TextGenContext" />
+    <classNode dependClassName="org.jetbrains.mps.openapi.language.SContainmentLink" />
     <classNode extendsClassName="jetbrains.mps.text.rt.TextGenDescriptorBase" />
   </dependency>
   <dependency className="HTML.textGen.TextGenAspectDescriptor">
@@ -19,6 +20,7 @@
     <classNode dependClassName="org.jetbrains.annotations.NotNull" />
     <classNode dependClassName="org.jetbrains.annotations.Nullable" />
     <classNode dependClassName="org.jetbrains.mps.openapi.language.SAbstractConcept" />
+    <classNode dependClassName="org.jetbrains.mps.openapi.language.SConcept" />
     <classNode dependClassName="org.jetbrains.mps.openapi.model.SNode" />
     <classNode extendsClassName="jetbrains.mps.text.rt.TextGenAspectBase" />
   </dependency>

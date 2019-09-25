@@ -8,7 +8,7 @@
   <sourcePath />
   <languageVersions>
     <language slang="l:b9f4bf86-0f3d-4271-8f07-abe516407b4a:CSS" version="0" />
-    <language slang="l:ceab5195-25ea-4f22-9b92-103b95ca8c0c:jetbrains.mps.lang.core" version="1" />
+    <language slang="l:ceab5195-25ea-4f22-9b92-103b95ca8c0c:jetbrains.mps.lang.core" version="2" />
   </languageVersions>
   <dependencyVersions>
     <module reference="a6194a0a-5f26-4cc8-8968-2f053e59a4b5(CSS.sandbox)" version="0" />

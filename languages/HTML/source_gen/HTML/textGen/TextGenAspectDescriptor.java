@@ -10,6 +10,7 @@ import org.jetbrains.annotations.NotNull;
 import org.jetbrains.mps.openapi.language.SAbstractConcept;
 import jetbrains.mps.text.rt.TextGenModelOutline;
 import org.jetbrains.mps.openapi.model.SNode;
+import org.jetbrains.mps.openapi.language.SConcept;
 import jetbrains.mps.smodel.adapter.structure.MetaAdapterFactory;
 
 public class TextGenAspectDescriptor extends TextGenAspectBase {
@@ -31,7 +32,7 @@ public class TextGenAspectDescriptor extends TextGenAspectBase {
   @Override
   public void breakdownToUnits(@NotNull TextGenModelOutline outline) {
     for (SNode root : outline.getModel().getRootNodes()) {
-      if (root.getConcept().equals(MetaAdapterFactory.getConcept(0x1600481192b0449fL, 0x957c57094436be28L, 0x77e279c085c5db67L, "HTML.structure.HtmlFile"))) {
+      if (root.getConcept().equals(CONCEPTS.HtmlFile$xb)) {
         String fname = getFileName_HtmlFile(root);
         String ext = getFileExtension_HtmlFile(root);
         outline.registerTextUnit((ext == null ? fname : (fname + '.' + ext)), root);
@@ -44,5 +45,9 @@ public class TextGenAspectDescriptor extends TextGenAspectBase {
   }
   private static String getFileExtension_HtmlFile(SNode node) {
     return "html";
+  }
+
+  private static final class CONCEPTS {
+    /*package*/ static final SConcept HtmlFile$xb = MetaAdapterFactory.getConcept(0x1600481192b0449fL, 0x957c57094436be28L, 0x77e279c085c5db67L, "HTML.structure.HtmlFile");
   }
 }

@@ -17,7 +17,6 @@ import jetbrains.mps.editor.runtime.style.StyleImpl;
 import jetbrains.mps.editor.runtime.style.StyleAttributes;
 import jetbrains.mps.lang.editor.cellProviders.RefNodeListHandler;
 import org.jetbrains.mps.openapi.language.SContainmentLink;
-import jetbrains.mps.smodel.adapter.structure.MetaAdapterFactory;
 import org.jetbrains.mps.openapi.language.SAbstractConcept;
 import jetbrains.mps.openapi.editor.menus.transformation.SNodeLocation;
 import jetbrains.mps.openapi.editor.cells.CellActionType;
@@ -25,6 +24,8 @@ import jetbrains.mps.nodeEditor.cellActions.CellAction_DeleteNode;
 import jetbrains.mps.openapi.editor.cells.DefaultSubstituteInfo;
 import jetbrains.mps.nodeEditor.cellMenu.SEmptyContainmentSubstituteInfo;
 import jetbrains.mps.nodeEditor.cellMenu.SChildSubstituteInfo;
+import jetbrains.mps.smodel.adapter.structure.MetaAdapterFactory;
+import org.jetbrains.mps.openapi.language.SConcept;
 
 /*package*/ class CSS_Declaration_Block_EditorBuilder_a extends AbstractEditorBuilder {
   @NotNull
@@ -62,7 +63,7 @@ import jetbrains.mps.nodeEditor.cellMenu.SChildSubstituteInfo;
     return editorCell;
   }
   private EditorCell createRefNodeList_0() {
-    AbstractCellListHandler handler = new CSS_Declaration_Block_EditorBuilder_a.declarationsListHandler_tcdvog_b0(myNode, getEditorContext());
+    AbstractCellListHandler handler = new declarationsListHandler_tcdvog_b0(myNode, getEditorContext());
     EditorCell_Collection editorCell = handler.createCells(new CellLayout_Vertical(), false);
     editorCell.setCellId("refNodeList_declarations");
     Style style = new StyleImpl();
@@ -86,10 +87,10 @@ import jetbrains.mps.nodeEditor.cellMenu.SChildSubstituteInfo;
       return myNode;
     }
     public SContainmentLink getSLink() {
-      return MetaAdapterFactory.getContainmentLink(0xb9f4bf860f3d4271L, 0x8f07abe516407b4aL, 0x6fc2a5dc202eb7a5L, 0x6fc2a5dc202eb7c1L, "declarations");
+      return LINKS.declarations$SMdr;
     }
     public SAbstractConcept getChildSConcept() {
-      return MetaAdapterFactory.getConcept(0xb9f4bf860f3d4271L, 0x8f07abe516407b4aL, 0x6fc2a5dc202eb7a3L, "CSS.structure.CSS_Declaration");
+      return CONCEPTS.CSS_Declaration$2a;
     }
 
     public EditorCell createNodeCell(SNode elementNode) {
@@ -99,7 +100,7 @@ import jetbrains.mps.nodeEditor.cellMenu.SChildSubstituteInfo;
     }
     public EditorCell createEmptyCell() {
       getCellFactory().pushCellContext();
-      getCellFactory().setNodeLocation(new SNodeLocation.FromParentAndLink(declarationsListHandler_tcdvog_b0.this.getNode(), MetaAdapterFactory.getContainmentLink(0xb9f4bf860f3d4271L, 0x8f07abe516407b4aL, 0x6fc2a5dc202eb7a5L, 0x6fc2a5dc202eb7c1L, "declarations")));
+      getCellFactory().setNodeLocation(new SNodeLocation.FromParentAndLink(declarationsListHandler_tcdvog_b0.this.getNode(), LINKS.declarations$SMdr));
       try {
         EditorCell emptyCell = null;
         emptyCell = super.createEmptyCell();
@@ -131,5 +132,13 @@ import jetbrains.mps.nodeEditor.cellMenu.SChildSubstituteInfo;
     editorCell.getStyle().putAll(style);
     editorCell.setDefaultText("");
     return editorCell;
+  }
+
+  private static final class LINKS {
+    /*package*/ static final SContainmentLink declarations$SMdr = MetaAdapterFactory.getContainmentLink(0xb9f4bf860f3d4271L, 0x8f07abe516407b4aL, 0x6fc2a5dc202eb7a5L, 0x6fc2a5dc202eb7c1L, "declarations");
+  }
+
+  private static final class CONCEPTS {
+    /*package*/ static final SConcept CSS_Declaration$2a = MetaAdapterFactory.getConcept(0xb9f4bf860f3d4271L, 0x8f07abe516407b4aL, 0x6fc2a5dc202eb7a3L, "CSS.structure.CSS_Declaration");
   }
 }

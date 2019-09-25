@@ -5,8 +5,6 @@ package Furniture.behavior;
 import jetbrains.mps.core.aspects.behaviour.BaseBHDescriptor;
 import org.jetbrains.mps.openapi.language.SAbstractConcept;
 import jetbrains.mps.smodel.adapter.structure.MetaAdapterFactory;
-import jetbrains.mps.core.aspects.behaviour.api.BehaviorRegistry;
-import jetbrains.mps.smodel.language.ConceptRegistry;
 import jetbrains.mps.core.aspects.behaviour.api.SMethod;
 import jetbrains.mps.core.aspects.behaviour.SMethodBuilder;
 import jetbrains.mps.core.aspects.behaviour.SJavaCompoundTypeImpl;
@@ -21,13 +19,15 @@ import jetbrains.mps.lang.smodel.generator.smodelAdapter.SPropertyOperations;
 import jetbrains.mps.core.aspects.behaviour.api.SConstructor;
 import org.jetbrains.annotations.Nullable;
 import jetbrains.mps.core.aspects.behaviour.api.BHMethodNotFoundException;
+import org.jetbrains.mps.openapi.language.SContainmentLink;
+import org.jetbrains.mps.openapi.language.SReferenceLink;
+import org.jetbrains.mps.openapi.language.SProperty;
 
 public final class Garage_Project__BehaviorDescriptor extends BaseBHDescriptor {
   private static final SAbstractConcept CONCEPT = MetaAdapterFactory.getConcept(0xba1c46a5482045d5L, 0x9b2c6521c394c581L, 0x5418fa6ab58180f0L, "Furniture.structure.Garage_Project");
-  private static final BehaviorRegistry REGISTRY = ConceptRegistry.getInstance().getBehaviorRegistry();
 
-  public static final SMethod<Integer> getExpenses_id66xXmRs9di7 = new SMethodBuilder<Integer>(new SJavaCompoundTypeImpl(Integer.TYPE)).name("getExpenses").modifiers(SModifiersImpl.create(0, AccessPrivileges.PUBLIC)).concept(CONCEPT).id("66xXmRs9di7").registry(REGISTRY).build();
-  public static final SMethod<Integer> getPrice_id5goYAEPxwrW = new SMethodBuilder<Integer>(new SJavaCompoundTypeImpl(Integer.TYPE)).name("getPrice").modifiers(SModifiersImpl.create(0, AccessPrivileges.PUBLIC)).concept(CONCEPT).id("5goYAEPxwrW").registry(REGISTRY).build();
+  public static final SMethod<Integer> getExpenses_id66xXmRs9di7 = new SMethodBuilder<Integer>(new SJavaCompoundTypeImpl(Integer.TYPE)).name("getExpenses").modifiers(SModifiersImpl.create(0, AccessPrivileges.PUBLIC)).concept(CONCEPT).id("66xXmRs9di7").build();
+  public static final SMethod<Integer> getPrice_id5goYAEPxwrW = new SMethodBuilder<Integer>(new SJavaCompoundTypeImpl(Integer.TYPE)).name("getPrice").modifiers(SModifiersImpl.create(0, AccessPrivileges.PUBLIC)).concept(CONCEPT).id("5goYAEPxwrW").build();
 
   private static final List<SMethod<?>> BH_METHODS = Arrays.<SMethod<?>>asList(getExpenses_id66xXmRs9di7, getPrice_id5goYAEPxwrW);
 
@@ -36,8 +36,8 @@ public final class Garage_Project__BehaviorDescriptor extends BaseBHDescriptor {
 
   /*package*/ static int getExpenses_id66xXmRs9di7(@NotNull SNode __thisNode__) {
     int expenses = 0;
-    for (SNode component : SLinkOperations.getChildren(__thisNode__, MetaAdapterFactory.getContainmentLink(0xba1c46a5482045d5L, 0x9b2c6521c394c581L, 0x5418fa6ab58180f0L, 0x61a1f56ddc204554L, "components"))) {
-      expenses += SPropertyOperations.getInteger(SLinkOperations.getTarget(component, MetaAdapterFactory.getReferenceLink(0xba1c46a5482045d5L, 0x9b2c6521c394c581L, 0x5418fa6ab5818106L, 0x61a1f56ddc20455aL, "component")), MetaAdapterFactory.getProperty(0xba1c46a5482045d5L, 0x9b2c6521c394c581L, 0x61a1f56ddc201198L, 0x61a1f56ddc203476L, "price")) * SPropertyOperations.getInteger(component, MetaAdapterFactory.getProperty(0xba1c46a5482045d5L, 0x9b2c6521c394c581L, 0x5418fa6ab5818106L, 0x61a1f56ddc20455dL, "quantity"));
+    for (SNode component : SLinkOperations.getChildren(__thisNode__, LINKS.components$MH9U)) {
+      expenses += SPropertyOperations.getInteger(SLinkOperations.getTarget(component, LINKS.component$MMjk), PROPS.price$_ZO7) * SPropertyOperations.getInteger(component, PROPS.quantity$MMuW);
     }
     return expenses;
   }
@@ -47,7 +47,6 @@ public final class Garage_Project__BehaviorDescriptor extends BaseBHDescriptor {
   }
 
   /*package*/ Garage_Project__BehaviorDescriptor() {
-    super(REGISTRY);
   }
 
   @Override
@@ -93,5 +92,15 @@ public final class Garage_Project__BehaviorDescriptor extends BaseBHDescriptor {
   @Override
   public SAbstractConcept getConcept() {
     return CONCEPT;
+  }
+
+  private static final class LINKS {
+    /*package*/ static final SContainmentLink components$MH9U = MetaAdapterFactory.getContainmentLink(0xba1c46a5482045d5L, 0x9b2c6521c394c581L, 0x5418fa6ab58180f0L, 0x61a1f56ddc204554L, "components");
+    /*package*/ static final SReferenceLink component$MMjk = MetaAdapterFactory.getReferenceLink(0xba1c46a5482045d5L, 0x9b2c6521c394c581L, 0x5418fa6ab5818106L, 0x61a1f56ddc20455aL, "component");
+  }
+
+  private static final class PROPS {
+    /*package*/ static final SProperty quantity$MMuW = MetaAdapterFactory.getProperty(0xba1c46a5482045d5L, 0x9b2c6521c394c581L, 0x5418fa6ab5818106L, 0x61a1f56ddc20455dL, "quantity");
+    /*package*/ static final SProperty price$_ZO7 = MetaAdapterFactory.getProperty(0xba1c46a5482045d5L, 0x9b2c6521c394c581L, 0x61a1f56ddc201198L, 0x61a1f56ddc203476L, "price");
   }
 }

@@ -12,7 +12,7 @@
   <languageVersions>
     <language slang="l:798100da-4f0a-421a-b991-71f8c50ce5d2:jetbrains.mps.build" version="0" />
     <language slang="l:0cf935df-4699-4e9c-a132-fa109541cba3:jetbrains.mps.build.mps" version="7" />
-    <language slang="l:ceab5195-25ea-4f22-9b92-103b95ca8c0c:jetbrains.mps.lang.core" version="1" />
+    <language slang="l:ceab5195-25ea-4f22-9b92-103b95ca8c0c:jetbrains.mps.lang.core" version="2" />
   </languageVersions>
   <dependencyVersions>
     <module reference="ae97fbf8-19de-43f3-b943-564f39d09e15(Basic_CSS.build)" version="0" />

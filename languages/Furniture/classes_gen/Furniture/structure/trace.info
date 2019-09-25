@@ -22,46 +22,60 @@
       <unit at="20,0,123,0" name="Furniture.structure.StructureAspectDescriptor" />
     </file>
   </root>
-  <root nodeRef="r:e44b24ff-876f-47eb-9c98-9fe11b493d00(Furniture.structure)/6059868634845640373">
+  <root nodeRef="r:e44b24ff-876f-47eb-9c98-9fe11b493d00(Furniture.structure)/1547721959575524310">
     <file name="EnumerationDescriptor_Material.java">
-      <node id="6059868634845640373" at="15,43,16,192" concept="9" />
-      <node id="7035173945122763866" at="19,0,20,0" concept="2" trace="VALUE_Maple_0" />
-      <node id="7035173945122763867" at="20,0,21,0" concept="2" trace="VALUE_Oak_0" />
-      <node id="7035173945122763872" at="21,0,22,0" concept="2" trace="VALUE_Iron_0" />
-      <node id="7035173945122763879" at="22,0,23,0" concept="2" trace="VALUE_Steel_0" />
-      <node id="6059868634845640373" at="26,62,27,25" concept="6" />
-      <node id="6059868634845640373" at="32,74,33,82" concept="6" />
-      <node id="6059868634845640373" at="39,25,40,18" concept="6" />
-      <node id="7035173945122763866" at="43,19,44,29" concept="6" />
-      <node id="7035173945122763867" at="45,17,46,27" concept="6" />
-      <node id="7035173945122763872" at="47,18,48,28" concept="6" />
-      <node id="7035173945122763879" at="49,19,50,29" concept="6" />
-      <node id="6059868634845640373" at="51,5,52,16" concept="6" />
-      <node id="6059868634845640373" at="15,0,18,0" concept="0" trace="EnumerationDescriptor_Material#()V" />
-      <node id="6059868634845640373" at="38,84,41,5" concept="3" />
-      <node id="6059868634845640373" at="24,0,29,0" concept="4" trace="getDefault#()Ljetbrains/mps/smodel/runtime/EnumerationDescriptor/MemberDescriptor;" />
-      <node id="6059868634845640373" at="30,0,35,0" concept="4" trace="getMembers#()Ljava/util/Collection;" />
-      <node id="6059868634845640373" at="41,5,51,5" concept="10" />
-      <node id="6059868634845640373" at="36,0,54,0" concept="4" trace="getMember#(Ljava/lang/String;)Ljetbrains/mps/smodel/runtime/EnumerationDescriptor/MemberDescriptor;" />
-      <scope id="6059868634845640373" at="15,43,16,192" />
-      <scope id="6059868634845640373" at="26,62,27,25" />
-      <scope id="6059868634845640373" at="32,74,33,82" />
-      <scope id="6059868634845640373" at="39,25,40,18" />
-      <scope id="7035173945122763866" at="43,19,44,29" />
-      <scope id="7035173945122763867" at="45,17,46,27" />
-      <scope id="7035173945122763872" at="47,18,48,28" />
-      <scope id="7035173945122763879" at="49,19,50,29" />
-      <scope id="6059868634845640373" at="15,0,18,0" />
-      <scope id="6059868634845640373" at="24,0,29,0" />
-      <scope id="6059868634845640373" at="30,0,35,0" />
-      <scope id="6059868634845640373" at="38,84,52,16" />
-      <scope id="6059868634845640373" at="36,0,54,0">
-        <var name="string" id="6059868634845640373" />
+      <node id="1547721959575524310" at="15,43,16,192" concept="9" />
+      <node id="1547721959575524312" at="19,0,20,0" concept="2" trace="myMember_Maple_0" />
+      <node id="1547721959575524313" at="20,0,21,0" concept="2" trace="myMember_Oak_0" />
+      <node id="1547721959575524314" at="21,0,22,0" concept="2" trace="myMember_Iron_0" />
+      <node id="1547721959575524315" at="22,0,23,0" concept="2" trace="myMember_Steel_0" />
+      <node id="1547721959575524310" at="24,0,25,0" concept="2" trace="myIndex" />
+      <node id="1547721959575524310" at="25,0,26,0" concept="2" trace="myMembers" />
+      <node id="1547721959575524310" at="29,62,30,28" concept="6" />
+      <node id="1547721959575524310" at="35,68,36,21" concept="6" />
+      <node id="1547721959575524310" at="42,29,43,18" concept="6" />
+      <node id="1547721959575524312" at="46,19,47,32" concept="6" />
+      <node id="1547721959575524313" at="48,17,49,30" concept="6" />
+      <node id="1547721959575524314" at="50,18,51,31" concept="6" />
+      <node id="1547721959575524315" at="52,19,53,32" concept="6" />
+      <node id="1547721959575524310" at="54,5,55,16" concept="6" />
+      <node id="1547721959575524310" at="60,73,61,39" concept="5" />
+      <node id="1547721959575524310" at="62,22,63,18" concept="6" />
+      <node id="1547721959575524310" at="64,5,65,32" concept="6" />
+      <node id="1547721959575524310" at="15,0,18,0" concept="0" trace="EnumerationDescriptor_Material#()V" />
+      <node id="1547721959575524310" at="41,88,44,5" concept="3" />
+      <node id="1547721959575524310" at="61,39,64,5" concept="3" />
+      <node id="1547721959575524310" at="27,0,32,0" concept="4" trace="getDefault#()Ljetbrains/mps/smodel/runtime/EnumerationDescriptor/MemberDescriptor;" />
+      <node id="1547721959575524310" at="33,0,38,0" concept="4" trace="getMembers#()Ljava/util/List;" />
+      <node id="1547721959575524310" at="58,0,67,0" concept="4" trace="getMember#(J)Ljetbrains/mps/smodel/runtime/EnumerationDescriptor/MemberDescriptor;" />
+      <node id="1547721959575524310" at="44,5,54,5" concept="10" />
+      <node id="1547721959575524310" at="39,0,57,0" concept="4" trace="getMember#(Ljava/lang/String;)Ljetbrains/mps/smodel/runtime/EnumerationDescriptor/MemberDescriptor;" />
+      <scope id="1547721959575524310" at="15,43,16,192" />
+      <scope id="1547721959575524310" at="29,62,30,28" />
+      <scope id="1547721959575524310" at="35,68,36,21" />
+      <scope id="1547721959575524310" at="42,29,43,18" />
+      <scope id="1547721959575524312" at="46,19,47,32" />
+      <scope id="1547721959575524313" at="48,17,49,30" />
+      <scope id="1547721959575524314" at="50,18,51,31" />
+      <scope id="1547721959575524315" at="52,19,53,32" />
+      <scope id="1547721959575524310" at="62,22,63,18" />
+      <scope id="1547721959575524310" at="15,0,18,0" />
+      <scope id="1547721959575524310" at="27,0,32,0" />
+      <scope id="1547721959575524310" at="33,0,38,0" />
+      <scope id="1547721959575524310" at="60,73,65,32">
+        <var name="index" id="1547721959575524310" />
       </scope>
-      <unit id="6059868634845640373" at="13,0,55,0" name="Furniture.structure.EnumerationDescriptor_Material" />
+      <scope id="1547721959575524310" at="58,0,67,0">
+        <var name="idValue" id="1547721959575524310" />
+      </scope>
+      <scope id="1547721959575524310" at="41,88,55,16" />
+      <scope id="1547721959575524310" at="39,0,57,0">
+        <var name="memberName" id="1547721959575524310" />
+      </scope>
+      <unit id="1547721959575524310" at="13,0,68,0" name="Furniture.structure.EnumerationDescriptor_Material" />
     </file>
     <file name="StructureAspectDescriptor.java">
-      <node id="6059868634845640373" at="26,0,27,0" concept="2" trace="myEnumerationMaterial" />
+      <node id="1547721959575524310" at="26,0,27,0" concept="2" trace="myEnumerationMaterial" />
     </file>
   </root>
   <root nodeRef="r:e44b24ff-876f-47eb-9c98-9fe11b493d00(Furniture.structure)/6059868634845642991">
@@ -236,7 +250,7 @@
       <node id="7035173945122754968" at="75,34,76,71" concept="1" />
       <node id="7035173945122754968" at="76,71,77,96" concept="1" />
       <node id="7035173945122754968" at="77,96,78,17" concept="1" />
-      <node id="7035173945122763888" at="78,17,79,179" concept="1" />
+      <node id="1547721959575524331" at="78,17,79,179" concept="1" />
       <node id="7035173945122763894" at="79,179,80,112" concept="1" />
       <node id="7035173945122754968" at="80,112,81,25" concept="1" />
       <node id="7035173945122754968" at="81,25,82,22" concept="6" />

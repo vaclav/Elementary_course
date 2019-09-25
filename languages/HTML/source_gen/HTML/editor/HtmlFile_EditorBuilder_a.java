@@ -14,13 +14,9 @@ import jetbrains.mps.openapi.editor.style.Style;
 import jetbrains.mps.editor.runtime.style.StyleImpl;
 import jetbrains.mps.editor.runtime.style.StyleAttributes;
 import org.jetbrains.mps.openapi.language.SProperty;
-import jetbrains.mps.smodel.adapter.structure.MetaAdapterFactory;
 import jetbrains.mps.openapi.editor.menus.transformation.SPropertyInfo;
 import jetbrains.mps.nodeEditor.cells.EditorCell_Property;
 import jetbrains.mps.nodeEditor.cells.SPropertyAccessor;
-import jetbrains.mps.openapi.editor.cells.CellActionType;
-import jetbrains.mps.editor.runtime.impl.cellActions.CellAction_DeleteSPropertyOrNode;
-import jetbrains.mps.nodeEditor.cellActions.CellAction_DeleteNode;
 import jetbrains.mps.nodeEditor.cellMenu.SPropertySubstituteInfo;
 import jetbrains.mps.lang.smodel.generator.smodelAdapter.SNodeOperations;
 import jetbrains.mps.lang.smodel.generator.smodelAdapter.AttributeOperations;
@@ -33,11 +29,14 @@ import jetbrains.mps.nodeEditor.EditorManager;
 import jetbrains.mps.openapi.editor.update.AttributeKind;
 import jetbrains.mps.lang.editor.cellProviders.SingleRoleCellProvider;
 import org.jetbrains.mps.openapi.language.SContainmentLink;
+import jetbrains.mps.openapi.editor.cells.CellActionType;
 import jetbrains.mps.editor.runtime.impl.cellActions.CellAction_DeleteSmart;
 import jetbrains.mps.openapi.editor.cells.DefaultSubstituteInfo;
 import jetbrains.mps.nodeEditor.cellMenu.SEmptyContainmentSubstituteInfo;
 import jetbrains.mps.nodeEditor.cellMenu.SChildSubstituteInfo;
 import jetbrains.mps.openapi.editor.menus.transformation.SNodeLocation;
+import jetbrains.mps.smodel.adapter.structure.MetaAdapterFactory;
+import org.jetbrains.mps.openapi.language.SConcept;
 
 /*package*/ class HtmlFile_EditorBuilder_a extends AbstractEditorBuilder {
   @NotNull
@@ -81,16 +80,14 @@ import jetbrains.mps.openapi.editor.menus.transformation.SNodeLocation;
   private EditorCell createProperty_0() {
     getCellFactory().pushCellContext();
     try {
-      final SProperty property = MetaAdapterFactory.getProperty(0xceab519525ea4f22L, 0x9b92103b95ca8c0cL, 0x110396eaaa4L, 0x110396ec041L, "name");
+      final SProperty property = PROPS.name$tAp1;
       getCellFactory().setPropertyInfo(new SPropertyInfo(myNode, property));
       EditorCell_Property editorCell = EditorCell_Property.create(getEditorContext(), new SPropertyAccessor(myNode, property, false, false), myNode);
       editorCell.setDefaultText("<no name>");
-      editorCell.setAction(CellActionType.DELETE, new CellAction_DeleteSPropertyOrNode(myNode, property, CellAction_DeleteNode.DeleteDirection.FORWARD));
-      editorCell.setAction(CellActionType.BACKSPACE, new CellAction_DeleteSPropertyOrNode(myNode, property, CellAction_DeleteNode.DeleteDirection.BACKWARD));
       editorCell.setCellId("property_name");
       editorCell.setSubstituteInfo(new SPropertySubstituteInfo(editorCell, property));
       setCellContext(editorCell);
-      Iterable<SNode> propertyAttributes = SNodeOperations.ofConcept(AttributeOperations.getAttributeList(myNode, new IAttributeDescriptor.AllAttributes()), MetaAdapterFactory.getConcept(0xceab519525ea4f22L, 0x9b92103b95ca8c0cL, 0x2eb1ad060897da56L, "jetbrains.mps.lang.core.structure.PropertyAttribute"));
+      Iterable<SNode> propertyAttributes = SNodeOperations.ofConcept(AttributeOperations.getAttributeList(myNode, new IAttributeDescriptor.AllAttributes()), CONCEPTS.PropertyAttribute$jT);
       Iterable<SNode> currentPropertyAttributes = Sequence.fromIterable(propertyAttributes).where(new IWhereFilter<SNode>() {
         public boolean accept(SNode it) {
           return Objects.equals(PropertyAttribute__BehaviorDescriptor.getProperty_id1avfQ4BBzOo.invoke(it), property);
@@ -115,7 +112,7 @@ import jetbrains.mps.openapi.editor.menus.transformation.SNodeLocation;
     return editorCell;
   }
   private EditorCell createRefNode_0() {
-    SingleRoleCellProvider provider = new HtmlFile_EditorBuilder_a.documentSingleRoleHandler_ykiwdu_d0(myNode, MetaAdapterFactory.getContainmentLink(0x1600481192b0449fL, 0x957c57094436be28L, 0x77e279c085c5db67L, 0x77e279c085c5db68L, "document"), getEditorContext());
+    SingleRoleCellProvider provider = new documentSingleRoleHandler_ykiwdu_d0(myNode, LINKS.document$2$Ew, getEditorContext());
     return provider.createCell();
   }
   private static class documentSingleRoleHandler_ykiwdu_d0 extends SingleRoleCellProvider {
@@ -135,8 +132,8 @@ import jetbrains.mps.openapi.editor.menus.transformation.SNodeLocation;
 
     protected EditorCell createChildCell(SNode child) {
       EditorCell editorCell = getUpdateSession().updateChildNodeCell(child);
-      editorCell.setAction(CellActionType.DELETE, new CellAction_DeleteSmart(getNode(), MetaAdapterFactory.getContainmentLink(0x1600481192b0449fL, 0x957c57094436be28L, 0x77e279c085c5db67L, 0x77e279c085c5db68L, "document"), child));
-      editorCell.setAction(CellActionType.BACKSPACE, new CellAction_DeleteSmart(getNode(), MetaAdapterFactory.getContainmentLink(0x1600481192b0449fL, 0x957c57094436be28L, 0x77e279c085c5db67L, 0x77e279c085c5db68L, "document"), child));
+      editorCell.setAction(CellActionType.DELETE, new CellAction_DeleteSmart(getNode(), LINKS.document$2$Ew, child));
+      editorCell.setAction(CellActionType.BACKSPACE, new CellAction_DeleteSmart(getNode(), LINKS.document$2$Ew, child));
       installCellInfo(child, editorCell, false);
       return editorCell;
     }
@@ -148,7 +145,7 @@ import jetbrains.mps.openapi.editor.menus.transformation.SNodeLocation;
         editorCell.setSubstituteInfo((isEmpty ? new SEmptyContainmentSubstituteInfo(editorCell) : new SChildSubstituteInfo(editorCell)));
       }
       if (editorCell.getSRole() == null) {
-        editorCell.setSRole(MetaAdapterFactory.getContainmentLink(0x1600481192b0449fL, 0x957c57094436be28L, 0x77e279c085c5db67L, 0x77e279c085c5db68L, "document"));
+        editorCell.setSRole(LINKS.document$2$Ew);
       }
       Style style = new StyleImpl();
       style.set(StyleAttributes.INDENT_LAYOUT_ON_NEW_LINE, true);
@@ -157,7 +154,7 @@ import jetbrains.mps.openapi.editor.menus.transformation.SNodeLocation;
     @Override
     protected EditorCell createEmptyCell() {
       getCellFactory().pushCellContext();
-      getCellFactory().setNodeLocation(new SNodeLocation.FromParentAndLink(getNode(), MetaAdapterFactory.getContainmentLink(0x1600481192b0449fL, 0x957c57094436be28L, 0x77e279c085c5db67L, 0x77e279c085c5db68L, "document")));
+      getCellFactory().setNodeLocation(new SNodeLocation.FromParentAndLink(getNode(), LINKS.document$2$Ew));
       try {
         EditorCell editorCell = super.createEmptyCell();
         editorCell.setCellId("empty_document");
@@ -171,5 +168,17 @@ import jetbrains.mps.openapi.editor.menus.transformation.SNodeLocation;
     protected String getNoTargetText() {
       return "<no document>";
     }
+  }
+
+  private static final class PROPS {
+    /*package*/ static final SProperty name$tAp1 = MetaAdapterFactory.getProperty(0xceab519525ea4f22L, 0x9b92103b95ca8c0cL, 0x110396eaaa4L, 0x110396ec041L, "name");
+  }
+
+  private static final class CONCEPTS {
+    /*package*/ static final SConcept PropertyAttribute$jT = MetaAdapterFactory.getConcept(0xceab519525ea4f22L, 0x9b92103b95ca8c0cL, 0x2eb1ad060897da56L, "jetbrains.mps.lang.core.structure.PropertyAttribute");
+  }
+
+  private static final class LINKS {
+    /*package*/ static final SContainmentLink document$2$Ew = MetaAdapterFactory.getContainmentLink(0x1600481192b0449fL, 0x957c57094436be28L, 0x77e279c085c5db67L, 0x77e279c085c5db68L, "document");
   }
 }
