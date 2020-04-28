@@ -86,6 +86,7 @@
     <classNode dependClassName="Furniture.editor.Furniture_Style_StyleSheet.titleStyleClass" />
     <classNode dependClassName="Furniture.editor.Furniture_Style_StyleSheet.title_indentStyleClass" />
     <classNode dependClassName="java.lang.Iterable" />
+    <classNode dependClassName="java.lang.Object" />
     <classNode dependClassName="java.lang.Override" />
     <classNode dependClassName="java.util.Objects" />
     <classNode dependClassName="jetbrains.mps.editor.runtime.style.StyleAttributes" />
@@ -241,6 +242,7 @@
   </dependency>
   <dependency className="Furniture.editor.Warehouse_EditorBuilder_a">
     <classNode dependClassName="Furniture.editor.Furniture_Style_StyleSheet.titleStyleClass" />
+    <classNode dependClassName="java.lang.Object" />
     <classNode dependClassName="java.lang.Override" />
     <classNode dependClassName="jetbrains.mps.editor.runtime.style.StyleAttributes" />
     <classNode dependClassName="jetbrains.mps.editor.runtime.style.StyleImpl" />

@@ -13,6 +13,8 @@ import jetbrains.mps.smodel.runtime.StructureAspectDescriptor;
 import jetbrains.mps.smodel.runtime.ConceptPresentationAspect;
 import CSS.structure.ConceptPresentationAspectImpl;
 import jetbrains.mps.text.rt.TextGenAspectDescriptor;
+import org.jetbrains.annotations.NotNull;
+import jetbrains.mps.smodel.language.LanguageExtensions;
 
 public class Language extends LanguageRuntime {
   private final SLanguageId myId;
@@ -57,5 +59,9 @@ public class Language extends LanguageRuntime {
       return aspectClass.cast(new CSS.textGen.TextGenAspectDescriptor());
     }
     return null;
+  }
+
+  @Override
+  protected void contribute(@NotNull LanguageExtensions extensions) {
   }
 }

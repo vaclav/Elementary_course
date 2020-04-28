@@ -15,7 +15,7 @@
       <unit at="10,0,36,0" name="CSS.structure.LanguageConceptSwitch" />
     </file>
     <file name="StructureAspectDescriptor.java">
-      <unit at="16,0,116,0" name="CSS.structure.StructureAspectDescriptor" />
+      <unit at="15,0,111,0" name="CSS.structure.StructureAspectDescriptor" />
     </file>
   </root>
   <root nodeRef="r:59ac4b71-41ed-47d2-bf8b-0f44119e2363(CSS.structure)/8053181448543188899">
@@ -36,22 +36,22 @@
       <node id="8053181448543188899" at="19,116,20,54" concept="0" />
     </file>
     <file name="StructureAspectDescriptor.java">
-      <node id="8053181448543188899" at="17,0,18,0" concept="1" trace="myConceptCSS_Declaration" />
-      <node id="8053181448543188899" at="43,49,44,40" concept="4" />
-      <node id="8053181448543188899" at="67,73,68,153" concept="3" />
-      <node id="8053181448543188899" at="68,153,69,34" concept="0" />
-      <node id="8053181448543188899" at="69,34,70,90" concept="0" />
-      <node id="8053181448543188899" at="70,90,71,17" concept="0" />
-      <node id="8053181448543188904" at="71,17,72,114" concept="0" />
-      <node id="8053181448543188906" at="72,114,73,111" concept="0" />
-      <node id="8053181448543188899" at="73,111,74,27" concept="0" />
-      <node id="8053181448543188899" at="74,27,75,22" concept="4" />
-      <node id="8053181448543188899" at="67,0,77,0" concept="6" trace="createDescriptorForCSS_Declaration#()Ljetbrains/mps/smodel/runtime/ConceptDescriptor;" />
-      <scope id="8053181448543188899" at="43,49,44,40" />
-      <scope id="8053181448543188899" at="67,73,75,22">
+      <node id="8053181448543188899" at="16,0,17,0" concept="1" trace="myConceptCSS_Declaration" />
+      <node id="8053181448543188899" at="42,49,43,40" concept="4" />
+      <node id="8053181448543188899" at="62,73,63,153" concept="3" />
+      <node id="8053181448543188899" at="63,153,64,34" concept="0" />
+      <node id="8053181448543188899" at="64,34,65,90" concept="0" />
+      <node id="8053181448543188899" at="65,90,66,17" concept="0" />
+      <node id="8053181448543188904" at="66,17,67,114" concept="0" />
+      <node id="8053181448543188906" at="67,114,68,111" concept="0" />
+      <node id="8053181448543188899" at="68,111,69,27" concept="0" />
+      <node id="8053181448543188899" at="69,27,70,22" concept="4" />
+      <node id="8053181448543188899" at="62,0,72,0" concept="6" trace="createDescriptorForCSS_Declaration#()Ljetbrains/mps/smodel/runtime/ConceptDescriptor;" />
+      <scope id="8053181448543188899" at="42,49,43,40" />
+      <scope id="8053181448543188899" at="62,73,70,22">
         <var name="b" id="8053181448543188899" />
       </scope>
-      <scope id="8053181448543188899" at="67,0,77,0" />
+      <scope id="8053181448543188899" at="62,0,72,0" />
     </file>
   </root>
   <root nodeRef="r:59ac4b71-41ed-47d2-bf8b-0f44119e2363(CSS.structure)/8053181448543188900">
@@ -72,21 +72,21 @@
       <node id="8053181448543188900" at="23,50,24,51" concept="0" />
     </file>
     <file name="StructureAspectDescriptor.java">
-      <node id="8053181448543188900" at="21,0,22,0" concept="1" trace="myConceptCSS_Selector" />
-      <node id="8053181448543188900" at="51,46,52,37" concept="4" />
-      <node id="8053181448543188900" at="106,70,107,150" concept="3" />
-      <node id="8053181448543188900" at="107,150,108,34" concept="0" />
-      <node id="8053181448543188900" at="108,34,109,71" concept="0" />
-      <node id="8053181448543188900" at="109,71,110,90" concept="0" />
-      <node id="8053181448543188900" at="110,90,111,17" concept="0" />
-      <node id="8053181448543188900" at="111,17,112,24" concept="0" />
-      <node id="8053181448543188900" at="112,24,113,22" concept="4" />
-      <node id="8053181448543188900" at="106,0,115,0" concept="6" trace="createDescriptorForCSS_Selector#()Ljetbrains/mps/smodel/runtime/ConceptDescriptor;" />
-      <scope id="8053181448543188900" at="51,46,52,37" />
-      <scope id="8053181448543188900" at="106,70,113,22">
+      <node id="8053181448543188900" at="20,0,21,0" concept="1" trace="myConceptCSS_Selector" />
+      <node id="8053181448543188900" at="50,46,51,37" concept="4" />
+      <node id="8053181448543188900" at="101,70,102,150" concept="3" />
+      <node id="8053181448543188900" at="102,150,103,34" concept="0" />
+      <node id="8053181448543188900" at="103,34,104,71" concept="0" />
+      <node id="8053181448543188900" at="104,71,105,90" concept="0" />
+      <node id="8053181448543188900" at="105,90,106,17" concept="0" />
+      <node id="8053181448543188900" at="106,17,107,24" concept="0" />
+      <node id="8053181448543188900" at="107,24,108,22" concept="4" />
+      <node id="8053181448543188900" at="101,0,110,0" concept="6" trace="createDescriptorForCSS_Selector#()Ljetbrains/mps/smodel/runtime/ConceptDescriptor;" />
+      <scope id="8053181448543188900" at="50,46,51,37" />
+      <scope id="8053181448543188900" at="101,70,108,22">
         <var name="b" id="8053181448543188900" />
       </scope>
-      <scope id="8053181448543188900" at="106,0,115,0" />
+      <scope id="8053181448543188900" at="101,0,110,0" />
     </file>
   </root>
   <root nodeRef="r:59ac4b71-41ed-47d2-bf8b-0f44119e2363(CSS.structure)/8053181448543188901">
@@ -107,21 +107,21 @@
       <node id="8053181448543188901" at="20,54,21,60" concept="0" />
     </file>
     <file name="StructureAspectDescriptor.java">
-      <node id="8053181448543188901" at="18,0,19,0" concept="1" trace="myConceptCSS_Declaration_Block" />
-      <node id="8053181448543188901" at="45,55,46,46" concept="4" />
-      <node id="8053181448543188901" at="77,79,78,159" concept="3" />
-      <node id="8053181448543188901" at="78,159,79,34" concept="0" />
-      <node id="8053181448543188901" at="79,34,80,90" concept="0" />
-      <node id="8053181448543188901" at="80,90,81,17" concept="0" />
-      <node id="8053181448543188929" at="81,17,82,204" concept="0" />
-      <node id="8053181448543188901" at="82,204,83,33" concept="0" />
-      <node id="8053181448543188901" at="83,33,84,22" concept="4" />
-      <node id="8053181448543188901" at="77,0,86,0" concept="6" trace="createDescriptorForCSS_Declaration_Block#()Ljetbrains/mps/smodel/runtime/ConceptDescriptor;" />
-      <scope id="8053181448543188901" at="45,55,46,46" />
-      <scope id="8053181448543188901" at="77,79,84,22">
+      <node id="8053181448543188901" at="17,0,18,0" concept="1" trace="myConceptCSS_Declaration_Block" />
+      <node id="8053181448543188901" at="44,55,45,46" concept="4" />
+      <node id="8053181448543188901" at="72,79,73,159" concept="3" />
+      <node id="8053181448543188901" at="73,159,74,34" concept="0" />
+      <node id="8053181448543188901" at="74,34,75,90" concept="0" />
+      <node id="8053181448543188901" at="75,90,76,17" concept="0" />
+      <node id="8053181448543188929" at="76,17,77,204" concept="0" />
+      <node id="8053181448543188901" at="77,204,78,33" concept="0" />
+      <node id="8053181448543188901" at="78,33,79,22" concept="4" />
+      <node id="8053181448543188901" at="72,0,81,0" concept="6" trace="createDescriptorForCSS_Declaration_Block#()Ljetbrains/mps/smodel/runtime/ConceptDescriptor;" />
+      <scope id="8053181448543188901" at="44,55,45,46" />
+      <scope id="8053181448543188901" at="72,79,79,22">
         <var name="b" id="8053181448543188901" />
       </scope>
-      <scope id="8053181448543188901" at="77,0,86,0" />
+      <scope id="8053181448543188901" at="72,0,81,0" />
     </file>
   </root>
   <root nodeRef="r:59ac4b71-41ed-47d2-bf8b-0f44119e2363(CSS.structure)/8053181448543188902">
@@ -142,22 +142,22 @@
       <node id="8053181448543188902" at="21,60,22,47" concept="0" />
     </file>
     <file name="StructureAspectDescriptor.java">
-      <node id="8053181448543188902" at="19,0,20,0" concept="1" trace="myConceptCSS_File" />
-      <node id="8053181448543188902" at="47,42,48,33" concept="4" />
-      <node id="8053181448543188902" at="86,66,87,146" concept="3" />
-      <node id="8053181448543188902" at="87,146,88,33" concept="0" />
-      <node id="8053181448543188902" at="88,33,89,71" concept="0" />
-      <node id="8053181448543188902" at="89,71,90,90" concept="0" />
-      <node id="8053181448543188902" at="90,90,91,17" concept="0" />
-      <node id="8053181448543191048" at="91,17,92,200" concept="0" />
-      <node id="8053181448543188902" at="92,200,93,24" concept="0" />
-      <node id="8053181448543188902" at="93,24,94,22" concept="4" />
-      <node id="8053181448543188902" at="86,0,96,0" concept="6" trace="createDescriptorForCSS_File#()Ljetbrains/mps/smodel/runtime/ConceptDescriptor;" />
-      <scope id="8053181448543188902" at="47,42,48,33" />
-      <scope id="8053181448543188902" at="86,66,94,22">
+      <node id="8053181448543188902" at="18,0,19,0" concept="1" trace="myConceptCSS_File" />
+      <node id="8053181448543188902" at="46,42,47,33" concept="4" />
+      <node id="8053181448543188902" at="81,66,82,146" concept="3" />
+      <node id="8053181448543188902" at="82,146,83,33" concept="0" />
+      <node id="8053181448543188902" at="83,33,84,71" concept="0" />
+      <node id="8053181448543188902" at="84,71,85,90" concept="0" />
+      <node id="8053181448543188902" at="85,90,86,17" concept="0" />
+      <node id="8053181448543191048" at="86,17,87,200" concept="0" />
+      <node id="8053181448543188902" at="87,200,88,24" concept="0" />
+      <node id="8053181448543188902" at="88,24,89,22" concept="4" />
+      <node id="8053181448543188902" at="81,0,91,0" concept="6" trace="createDescriptorForCSS_File#()Ljetbrains/mps/smodel/runtime/ConceptDescriptor;" />
+      <scope id="8053181448543188902" at="46,42,47,33" />
+      <scope id="8053181448543188902" at="81,66,89,22">
         <var name="b" id="8053181448543188902" />
       </scope>
-      <scope id="8053181448543188902" at="86,0,96,0" />
+      <scope id="8053181448543188902" at="81,0,91,0" />
     </file>
   </root>
   <root nodeRef="r:59ac4b71-41ed-47d2-bf8b-0f44119e2363(CSS.structure)/8053181448543188903">
@@ -178,22 +178,22 @@
       <node id="8053181448543188903" at="22,47,23,50" concept="0" />
     </file>
     <file name="StructureAspectDescriptor.java">
-      <node id="8053181448543188903" at="20,0,21,0" concept="1" trace="myConceptCSS_Ruleset" />
-      <node id="8053181448543188903" at="49,45,50,36" concept="4" />
-      <node id="8053181448543188903" at="96,69,97,149" concept="3" />
-      <node id="8053181448543188903" at="97,149,98,34" concept="0" />
-      <node id="8053181448543188903" at="98,34,99,90" concept="0" />
-      <node id="8053181448543188903" at="99,90,100,17" concept="0" />
-      <node id="8053181448543190971" at="100,17,101,202" concept="0" />
-      <node id="8053181448543190973" at="101,202,102,199" concept="0" />
-      <node id="8053181448543188903" at="102,199,103,23" concept="0" />
-      <node id="8053181448543188903" at="103,23,104,22" concept="4" />
-      <node id="8053181448543188903" at="96,0,106,0" concept="6" trace="createDescriptorForCSS_Ruleset#()Ljetbrains/mps/smodel/runtime/ConceptDescriptor;" />
-      <scope id="8053181448543188903" at="49,45,50,36" />
-      <scope id="8053181448543188903" at="96,69,104,22">
+      <node id="8053181448543188903" at="19,0,20,0" concept="1" trace="myConceptCSS_Ruleset" />
+      <node id="8053181448543188903" at="48,45,49,36" concept="4" />
+      <node id="8053181448543188903" at="91,69,92,149" concept="3" />
+      <node id="8053181448543188903" at="92,149,93,34" concept="0" />
+      <node id="8053181448543188903" at="93,34,94,90" concept="0" />
+      <node id="8053181448543188903" at="94,90,95,17" concept="0" />
+      <node id="8053181448543190971" at="95,17,96,202" concept="0" />
+      <node id="8053181448543190973" at="96,202,97,199" concept="0" />
+      <node id="8053181448543188903" at="97,199,98,23" concept="0" />
+      <node id="8053181448543188903" at="98,23,99,22" concept="4" />
+      <node id="8053181448543188903" at="91,0,101,0" concept="6" trace="createDescriptorForCSS_Ruleset#()Ljetbrains/mps/smodel/runtime/ConceptDescriptor;" />
+      <scope id="8053181448543188903" at="48,45,49,36" />
+      <scope id="8053181448543188903" at="91,69,99,22">
         <var name="b" id="8053181448543188903" />
       </scope>
-      <scope id="8053181448543188903" at="96,0,106,0" />
+      <scope id="8053181448543188903" at="91,0,101,0" />
     </file>
   </root>
 </debug-info>
