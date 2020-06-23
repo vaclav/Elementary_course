@@ -2403,7 +2403,7 @@
             <property role="Xl_RC" value="r:e44b24ff-876f-47eb-9c98-9fe11b493d00(Furniture.structure)/6059868634845642991" />
           </node>
           <node concept="Xl_RD" id="dr" role="37wK5m">
-            <property role="Xl_RC" value="[@|#][A-Z][0-9][0-9][0-9]" />
+            <property role="Xl_RC" value="[@#][A-Z][0-9][0-9][0-9]" />
           </node>
         </node>
       </node>

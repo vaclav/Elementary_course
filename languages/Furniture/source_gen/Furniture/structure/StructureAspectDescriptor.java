@@ -24,7 +24,7 @@ public class StructureAspectDescriptor extends BaseStructureAspectDescriptor {
   /*package*/ final ConceptDescriptor myConceptText_Line = createDescriptorForText_Line();
   /*package*/ final ConceptDescriptor myConceptWarehouse = createDescriptorForWarehouse();
   /*package*/ final EnumerationDescriptor myEnumerationMaterial = new EnumerationDescriptor_Material();
-  /*package*/ final ConstrainedStringDatatypeDescriptor myCSDatatypeCode_Name = new ConstrainedStringDatatypeDescriptorImpl(0xba1c46a5482045d5L, 0x9b2c6521c394c581L, 0x5418fa6ab58180efL, "Code_Name", "r:e44b24ff-876f-47eb-9c98-9fe11b493d00(Furniture.structure)/6059868634845642991", "[@|#][A-Z][0-9][0-9][0-9]");
+  /*package*/ final ConstrainedStringDatatypeDescriptor myCSDatatypeCode_Name = new ConstrainedStringDatatypeDescriptorImpl(0xba1c46a5482045d5L, 0x9b2c6521c394c581L, 0x5418fa6ab58180efL, "Code_Name", "r:e44b24ff-876f-47eb-9c98-9fe11b493d00(Furniture.structure)/6059868634845642991", "[@#][A-Z][0-9][0-9][0-9]");
   private final LanguageConceptSwitch myIndexSwitch;
 
   public StructureAspectDescriptor() {
