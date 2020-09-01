@@ -23,7 +23,7 @@ public final class Project_Component__BehaviorDescriptor extends BaseBHDescripto
   private static final List<SMethod<?>> BH_METHODS = Arrays.<SMethod<?>>asList();
 
   private static void ___init___(@NotNull SNode __thisNode__) {
-    SPropertyOperations.assign(__thisNode__, PROPS.quantity$MMuW, 1);
+    SPropertyOperations.assign(__thisNode__, PROPS.quantity$jm9l, 1);
   }
 
 
@@ -72,6 +72,6 @@ public final class Project_Component__BehaviorDescriptor extends BaseBHDescripto
   }
 
   private static final class PROPS {
-    /*package*/ static final SProperty quantity$MMuW = MetaAdapterFactory.getProperty(0xba1c46a5482045d5L, 0x9b2c6521c394c581L, 0x5418fa6ab5818106L, 0x61a1f56ddc20455dL, "quantity");
+    /*package*/ static final SProperty quantity$jm9l = MetaAdapterFactory.getProperty(0xba1c46a5482045d5L, 0x9b2c6521c394c581L, 0x5418fa6ab5818106L, 0x61a1f56ddc20455dL, "quantity");
   }
 }

@@ -3,6 +3,7 @@
   <persistence version="9" />
   <attribute name="checkpoint" value="DescriptorClasses" />
   <attribute name="generation-plan" value="AspectCPS" />
+  <attribute name="user-objects" value="true" />
   <languages />
   <imports>
     <import index="qgp0" ref="r:60c081fd-ed46-4c94-8ef3-da41442f882c(Furniture.typesystem)" />

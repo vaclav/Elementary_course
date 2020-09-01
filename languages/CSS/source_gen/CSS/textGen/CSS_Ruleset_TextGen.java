@@ -14,14 +14,14 @@ public class CSS_Ruleset_TextGen extends TextGenDescriptorBase {
   @Override
   public void generateText(final TextGenContext ctx) {
     final TextGenSupport tgs = new TextGenSupport(ctx);
-    for (SNode item : SLinkOperations.getChildren(ctx.getPrimaryInput(), LINKS.selectors$9P71)) {
+    for (SNode item : SLinkOperations.getChildren(ctx.getPrimaryInput(), LINKS.selectors$lCcc)) {
       tgs.appendNode(item);
     }
-    tgs.appendNode(SLinkOperations.getTarget(ctx.getPrimaryInput(), LINKS.block$9P7Z));
+    tgs.appendNode(SLinkOperations.getTarget(ctx.getPrimaryInput(), LINKS.block$lCEe));
   }
 
   private static final class LINKS {
-    /*package*/ static final SContainmentLink selectors$9P71 = MetaAdapterFactory.getContainmentLink(0xb9f4bf860f3d4271L, 0x8f07abe516407b4aL, 0x6fc2a5dc202eb7a7L, 0x6fc2a5dc202ebfbbL, "selectors");
-    /*package*/ static final SContainmentLink block$9P7Z = MetaAdapterFactory.getContainmentLink(0xb9f4bf860f3d4271L, 0x8f07abe516407b4aL, 0x6fc2a5dc202eb7a7L, 0x6fc2a5dc202ebfbdL, "block");
+    /*package*/ static final SContainmentLink selectors$lCcc = MetaAdapterFactory.getContainmentLink(0xb9f4bf860f3d4271L, 0x8f07abe516407b4aL, 0x6fc2a5dc202eb7a7L, 0x6fc2a5dc202ebfbbL, "selectors");
+    /*package*/ static final SContainmentLink block$lCEe = MetaAdapterFactory.getContainmentLink(0xb9f4bf860f3d4271L, 0x8f07abe516407b4aL, 0x6fc2a5dc202eb7a7L, 0x6fc2a5dc202ebfbdL, "block");
   }
 }

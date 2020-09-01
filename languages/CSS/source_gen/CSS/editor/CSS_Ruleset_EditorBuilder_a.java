@@ -77,10 +77,10 @@ import org.jetbrains.mps.openapi.language.SConcept;
       return myNode;
     }
     public SContainmentLink getSLink() {
-      return LINKS.selectors$9P71;
+      return LINKS.selectors$lCcc;
     }
     public SAbstractConcept getChildSConcept() {
-      return CONCEPTS.CSS_Selector$89;
+      return CONCEPTS.CSS_Selector$UQ;
     }
 
     public EditorCell createNodeCell(SNode elementNode) {
@@ -90,7 +90,7 @@ import org.jetbrains.mps.openapi.language.SConcept;
     }
     public EditorCell createEmptyCell() {
       getCellFactory().pushCellContext();
-      getCellFactory().setNodeLocation(new SNodeLocation.FromParentAndLink(selectorsListHandler_ttmz9d_a0.this.getNode(), LINKS.selectors$9P71));
+      getCellFactory().setNodeLocation(new SNodeLocation.FromParentAndLink(selectorsListHandler_ttmz9d_a0.this.getNode(), LINKS.selectors$lCcc));
       try {
         EditorCell emptyCell = null;
         emptyCell = super.createEmptyCell();
@@ -143,7 +143,7 @@ import org.jetbrains.mps.openapi.language.SConcept;
     }
   }
   private EditorCell createRefNode_0() {
-    SingleRoleCellProvider provider = new blockSingleRoleHandler_ttmz9d_b0(myNode, LINKS.block$9P7Z, getEditorContext());
+    SingleRoleCellProvider provider = new blockSingleRoleHandler_ttmz9d_b0(myNode, LINKS.block$lCEe, getEditorContext());
     return provider.createCell();
   }
   private static class blockSingleRoleHandler_ttmz9d_b0 extends SingleRoleCellProvider {
@@ -163,8 +163,8 @@ import org.jetbrains.mps.openapi.language.SConcept;
 
     protected EditorCell createChildCell(SNode child) {
       EditorCell editorCell = getUpdateSession().updateChildNodeCell(child);
-      editorCell.setAction(CellActionType.DELETE, new CellAction_DeleteSmart(getNode(), LINKS.block$9P7Z, child));
-      editorCell.setAction(CellActionType.BACKSPACE, new CellAction_DeleteSmart(getNode(), LINKS.block$9P7Z, child));
+      editorCell.setAction(CellActionType.DELETE, new CellAction_DeleteSmart(getNode(), LINKS.block$lCEe, child));
+      editorCell.setAction(CellActionType.BACKSPACE, new CellAction_DeleteSmart(getNode(), LINKS.block$lCEe, child));
       installCellInfo(child, editorCell, false);
       return editorCell;
     }
@@ -176,13 +176,13 @@ import org.jetbrains.mps.openapi.language.SConcept;
         editorCell.setSubstituteInfo((isEmpty ? new SEmptyContainmentSubstituteInfo(editorCell) : new SChildSubstituteInfo(editorCell)));
       }
       if (editorCell.getSRole() == null) {
-        editorCell.setSRole(LINKS.block$9P7Z);
+        editorCell.setSRole(LINKS.block$lCEe);
       }
     }
     @Override
     protected EditorCell createEmptyCell() {
       getCellFactory().pushCellContext();
-      getCellFactory().setNodeLocation(new SNodeLocation.FromParentAndLink(getNode(), LINKS.block$9P7Z));
+      getCellFactory().setNodeLocation(new SNodeLocation.FromParentAndLink(getNode(), LINKS.block$lCEe));
       try {
         EditorCell editorCell = super.createEmptyCell();
         editorCell.setCellId("empty_block");
@@ -199,11 +199,11 @@ import org.jetbrains.mps.openapi.language.SConcept;
   }
 
   private static final class LINKS {
-    /*package*/ static final SContainmentLink selectors$9P71 = MetaAdapterFactory.getContainmentLink(0xb9f4bf860f3d4271L, 0x8f07abe516407b4aL, 0x6fc2a5dc202eb7a7L, 0x6fc2a5dc202ebfbbL, "selectors");
-    /*package*/ static final SContainmentLink block$9P7Z = MetaAdapterFactory.getContainmentLink(0xb9f4bf860f3d4271L, 0x8f07abe516407b4aL, 0x6fc2a5dc202eb7a7L, 0x6fc2a5dc202ebfbdL, "block");
+    /*package*/ static final SContainmentLink selectors$lCcc = MetaAdapterFactory.getContainmentLink(0xb9f4bf860f3d4271L, 0x8f07abe516407b4aL, 0x6fc2a5dc202eb7a7L, 0x6fc2a5dc202ebfbbL, "selectors");
+    /*package*/ static final SContainmentLink block$lCEe = MetaAdapterFactory.getContainmentLink(0xb9f4bf860f3d4271L, 0x8f07abe516407b4aL, 0x6fc2a5dc202eb7a7L, 0x6fc2a5dc202ebfbdL, "block");
   }
 
   private static final class CONCEPTS {
-    /*package*/ static final SConcept CSS_Selector$89 = MetaAdapterFactory.getConcept(0xb9f4bf860f3d4271L, 0x8f07abe516407b4aL, 0x6fc2a5dc202eb7a4L, "CSS.structure.CSS_Selector");
+    /*package*/ static final SConcept CSS_Selector$UQ = MetaAdapterFactory.getConcept(0xb9f4bf860f3d4271L, 0x8f07abe516407b4aL, 0x6fc2a5dc202eb7a4L, "CSS.structure.CSS_Selector");
   }
 }

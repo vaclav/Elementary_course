@@ -125,7 +125,7 @@ public class Project_Component_TransformationMenu extends TransformationMenuBase
 
         @Override
         public void execute(@NotNull String pattern) {
-          SPropertyOperations.assign(_context.getNode(), PROPS.quantity$MMuW, SPropertyOperations.getInteger(_context.getNode(), PROPS.quantity$MMuW) + 1);
+          SPropertyOperations.assign(_context.getNode(), PROPS.quantity$jm9l, SPropertyOperations.getInteger(_context.getNode(), PROPS.quantity$jm9l) + 1);
           _context.getEditorContext().getEditorComponent().update();
         }
 
@@ -186,13 +186,13 @@ public class Project_Component_TransformationMenu extends TransformationMenuBase
 
         @Override
         public void execute(@NotNull String pattern) {
-          SPropertyOperations.assign(_context.getNode(), PROPS.quantity$MMuW, SPropertyOperations.getInteger(_context.getNode(), PROPS.quantity$MMuW) - 1);
+          SPropertyOperations.assign(_context.getNode(), PROPS.quantity$jm9l, SPropertyOperations.getInteger(_context.getNode(), PROPS.quantity$jm9l) - 1);
           _context.getEditorContext().getEditorComponent().update();
         }
 
         @Override
         public boolean canExecute(@NotNull String pattern) {
-          return SPropertyOperations.getInteger(_context.getNode(), PROPS.quantity$MMuW) > 0;
+          return SPropertyOperations.getInteger(_context.getNode(), PROPS.quantity$jm9l) > 0;
         }
 
         @Override
@@ -216,6 +216,6 @@ public class Project_Component_TransformationMenu extends TransformationMenuBase
   }
 
   private static final class PROPS {
-    /*package*/ static final SProperty quantity$MMuW = MetaAdapterFactory.getProperty(0xba1c46a5482045d5L, 0x9b2c6521c394c581L, 0x5418fa6ab5818106L, 0x61a1f56ddc20455dL, "quantity");
+    /*package*/ static final SProperty quantity$jm9l = MetaAdapterFactory.getProperty(0xba1c46a5482045d5L, 0x9b2c6521c394c581L, 0x5418fa6ab5818106L, 0x61a1f56ddc20455dL, "quantity");
   }
 }

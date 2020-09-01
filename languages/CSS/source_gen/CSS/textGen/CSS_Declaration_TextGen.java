@@ -14,15 +14,15 @@ public class CSS_Declaration_TextGen extends TextGenDescriptorBase {
   public void generateText(final TextGenContext ctx) {
     final TextGenSupport tgs = new TextGenSupport(ctx);
     tgs.indent();
-    tgs.append(SPropertyOperations.getString(ctx.getPrimaryInput(), PROPS.property$SLys));
+    tgs.append(SPropertyOperations.getString(ctx.getPrimaryInput(), PROPS.property$4Tuh));
     tgs.append(" : ");
-    tgs.append(SPropertyOperations.getString(ctx.getPrimaryInput(), PROPS.value$SLzq));
+    tgs.append(SPropertyOperations.getString(ctx.getPrimaryInput(), PROPS.value$4TWj));
     tgs.append(";");
     tgs.newLine();
   }
 
   private static final class PROPS {
-    /*package*/ static final SProperty property$SLys = MetaAdapterFactory.getProperty(0xb9f4bf860f3d4271L, 0x8f07abe516407b4aL, 0x6fc2a5dc202eb7a3L, 0x6fc2a5dc202eb7a8L, "property");
-    /*package*/ static final SProperty value$SLzq = MetaAdapterFactory.getProperty(0xb9f4bf860f3d4271L, 0x8f07abe516407b4aL, 0x6fc2a5dc202eb7a3L, 0x6fc2a5dc202eb7aaL, "value");
+    /*package*/ static final SProperty property$4Tuh = MetaAdapterFactory.getProperty(0xb9f4bf860f3d4271L, 0x8f07abe516407b4aL, 0x6fc2a5dc202eb7a3L, 0x6fc2a5dc202eb7a8L, "property");
+    /*package*/ static final SProperty value$4TWj = MetaAdapterFactory.getProperty(0xb9f4bf860f3d4271L, 0x8f07abe516407b4aL, 0x6fc2a5dc202eb7a3L, 0x6fc2a5dc202eb7aaL, "value");
   }
 }

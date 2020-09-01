@@ -32,7 +32,7 @@ public class TextGenAspectDescriptor extends TextGenAspectBase {
   @Override
   public void breakdownToUnits(@NotNull TextGenModelOutline outline) {
     for (SNode root : outline.getModel().getRootNodes()) {
-      if (root.getConcept().equals(CONCEPTS.HtmlFile$xb)) {
+      if (root.getConcept().equals(CONCEPTS.HtmlFile$k9)) {
         String fname = getFileName_HtmlFile(root);
         String ext = getFileExtension_HtmlFile(root);
         outline.registerTextUnit((ext == null ? fname : (fname + '.' + ext)), root);
@@ -48,6 +48,6 @@ public class TextGenAspectDescriptor extends TextGenAspectBase {
   }
 
   private static final class CONCEPTS {
-    /*package*/ static final SConcept HtmlFile$xb = MetaAdapterFactory.getConcept(0x1600481192b0449fL, 0x957c57094436be28L, 0x77e279c085c5db67L, "HTML.structure.HtmlFile");
+    /*package*/ static final SConcept HtmlFile$k9 = MetaAdapterFactory.getConcept(0x1600481192b0449fL, 0x957c57094436be28L, 0x77e279c085c5db67L, "HTML.structure.HtmlFile");
   }
 }

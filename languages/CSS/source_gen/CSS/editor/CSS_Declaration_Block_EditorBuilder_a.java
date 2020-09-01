@@ -87,10 +87,10 @@ import org.jetbrains.mps.openapi.language.SConcept;
       return myNode;
     }
     public SContainmentLink getSLink() {
-      return LINKS.declarations$SMdr;
+      return LINKS.declarations$5eiM;
     }
     public SAbstractConcept getChildSConcept() {
-      return CONCEPTS.CSS_Declaration$2a;
+      return CONCEPTS.CSS_Declaration$OR;
     }
 
     public EditorCell createNodeCell(SNode elementNode) {
@@ -100,7 +100,7 @@ import org.jetbrains.mps.openapi.language.SConcept;
     }
     public EditorCell createEmptyCell() {
       getCellFactory().pushCellContext();
-      getCellFactory().setNodeLocation(new SNodeLocation.FromParentAndLink(declarationsListHandler_tcdvog_b0.this.getNode(), LINKS.declarations$SMdr));
+      getCellFactory().setNodeLocation(new SNodeLocation.FromParentAndLink(declarationsListHandler_tcdvog_b0.this.getNode(), LINKS.declarations$5eiM));
       try {
         EditorCell emptyCell = null;
         emptyCell = super.createEmptyCell();
@@ -151,10 +151,10 @@ import org.jetbrains.mps.openapi.language.SConcept;
   }
 
   private static final class LINKS {
-    /*package*/ static final SContainmentLink declarations$SMdr = MetaAdapterFactory.getContainmentLink(0xb9f4bf860f3d4271L, 0x8f07abe516407b4aL, 0x6fc2a5dc202eb7a5L, 0x6fc2a5dc202eb7c1L, "declarations");
+    /*package*/ static final SContainmentLink declarations$5eiM = MetaAdapterFactory.getContainmentLink(0xb9f4bf860f3d4271L, 0x8f07abe516407b4aL, 0x6fc2a5dc202eb7a5L, 0x6fc2a5dc202eb7c1L, "declarations");
   }
 
   private static final class CONCEPTS {
-    /*package*/ static final SConcept CSS_Declaration$2a = MetaAdapterFactory.getConcept(0xb9f4bf860f3d4271L, 0x8f07abe516407b4aL, 0x6fc2a5dc202eb7a3L, "CSS.structure.CSS_Declaration");
+    /*package*/ static final SConcept CSS_Declaration$OR = MetaAdapterFactory.getConcept(0xb9f4bf860f3d4271L, 0x8f07abe516407b4aL, 0x6fc2a5dc202eb7a3L, "CSS.structure.CSS_Declaration");
   }
 }
