@@ -8,7 +8,6 @@ import jetbrains.mps.smodel.adapter.structure.MetaAdapterFactory;
 import jetbrains.mps.core.aspects.behaviour.api.SMethod;
 import jetbrains.mps.core.aspects.behaviour.SMethodBuilder;
 import jetbrains.mps.core.aspects.behaviour.SJavaCompoundTypeImpl;
-import jetbrains.mps.core.aspects.behaviour.SModifiersImpl;
 import jetbrains.mps.core.aspects.behaviour.AccessPrivileges;
 import java.util.List;
 import java.util.Arrays;
@@ -26,8 +25,8 @@ import org.jetbrains.mps.openapi.language.SProperty;
 public final class Garage_Project__BehaviorDescriptor extends BaseBHDescriptor {
   private static final SAbstractConcept CONCEPT = MetaAdapterFactory.getConcept(0xba1c46a5482045d5L, 0x9b2c6521c394c581L, 0x5418fa6ab58180f0L, "Furniture.structure.Garage_Project");
 
-  public static final SMethod<Integer> getExpenses_id66xXmRs9di7 = new SMethodBuilder<Integer>(new SJavaCompoundTypeImpl(Integer.TYPE)).name("getExpenses").modifiers(SModifiersImpl.create(0, AccessPrivileges.PUBLIC)).concept(CONCEPT).id("66xXmRs9di7").build();
-  public static final SMethod<Integer> getPrice_id5goYAEPxwrW = new SMethodBuilder<Integer>(new SJavaCompoundTypeImpl(Integer.TYPE)).name("getPrice").modifiers(SModifiersImpl.create(0, AccessPrivileges.PUBLIC)).concept(CONCEPT).id("5goYAEPxwrW").build();
+  public static final SMethod<Integer> getExpenses_id66xXmRs9di7 = new SMethodBuilder<Integer>(new SJavaCompoundTypeImpl(Integer.TYPE)).name("getExpenses").modifiers(0, AccessPrivileges.PUBLIC).concept(CONCEPT).id("66xXmRs9di7").build();
+  public static final SMethod<Integer> getPrice_id5goYAEPxwrW = new SMethodBuilder<Integer>(new SJavaCompoundTypeImpl(Integer.TYPE)).name("getPrice").modifiers(0, AccessPrivileges.PUBLIC).concept(CONCEPT).id("5goYAEPxwrW").build();
 
   private static final List<SMethod<?>> BH_METHODS = Arrays.<SMethod<?>>asList(getExpenses_id66xXmRs9di7, getPrice_id5goYAEPxwrW);
 
@@ -42,7 +41,7 @@ public final class Garage_Project__BehaviorDescriptor extends BaseBHDescriptor {
     return expenses;
   }
   /*package*/ static int getPrice_id5goYAEPxwrW(@NotNull SNode __thisNode__) {
-    // raise expenses to 200% to gain some money 
+    // raise expenses to 200% to gain some money
     return ((int) Garage_Project__BehaviorDescriptor.getExpenses_id66xXmRs9di7.invoke(__thisNode__)) * 2;
   }
 

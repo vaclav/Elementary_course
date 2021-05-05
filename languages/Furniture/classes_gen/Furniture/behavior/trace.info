@@ -85,99 +85,99 @@
   </root>
   <root nodeRef="r:4d5c10f6-3805-4292-8be7-ed05dcc3ce80(Furniture.behavior)/6059868634845687138">
     <file name="Garage_Project__BehaviorDescriptor.java">
-      <node id="6059868634845687138" at="27,0,28,0" concept="8" trace="CONCEPT" />
-      <node id="6059868634845687138" at="29,0,30,0" concept="8" trace="getExpenses_id66xXmRs9di7" />
-      <node id="6059868634845687138" at="30,0,31,0" concept="8" trace="getPrice_id5goYAEPxwrW" />
-      <node id="6059868634845687138" at="32,0,33,0" concept="8" trace="BH_METHODS" />
-      <node id="7035173945123082486" at="37,81,38,21" concept="5" />
-      <node id="6059868634846019893" at="39,94,40,192" concept="1" />
-      <node id="6059868634845827618" at="41,5,42,20" concept="6" />
-      <node id="6059868634845957717" at="44,78,45,49" concept="7" />
-      <node id="6059868634845944469" at="45,49,46,105" concept="6" />
-      <node id="6059868634845687138" at="53,114,54,21" concept="1" />
-      <node id="6059868634845687138" at="58,114,59,49" concept="5" />
-      <node id="6059868634845687138" at="60,26,61,56" concept="11" />
-      <node id="6059868634845687138" at="64,13,65,63" concept="6" />
-      <node id="6059868634845687138" at="66,13,67,60" concept="6" />
-      <node id="6059868634845687138" at="68,14,69,58" concept="11" />
-      <node id="6059868634845687138" at="74,128,75,49" concept="5" />
-      <node id="6059868634845687138" at="76,26,77,56" concept="11" />
-      <node id="6059868634845687138" at="80,14,81,58" concept="11" />
-      <node id="6059868634845687138" at="87,48,88,22" concept="6" />
-      <node id="6059868634845687138" at="93,40,94,19" concept="6" />
-      <node id="6059868634845687138" at="98,0,99,0" concept="8" trace="components$gKXn" />
-      <node id="6059868634845687138" at="99,0,100,0" concept="8" trace="component$jgwX" />
-      <node id="6059868634845687138" at="103,0,104,0" concept="8" trace="quantity$jm9l" />
-      <node id="6059868634845687138" at="104,0,105,0" concept="8" trace="price$6NpE" />
-      <node id="6059868634845687138" at="34,0,36,0" concept="9" trace="___init___#(Lorg/jetbrains/mps/openapi/model/SNode;)V" />
-      <node id="6059868634845687138" at="49,0,51,0" concept="0" trace="Garage_Project__BehaviorDescriptor#()V" />
-      <node id="7035173945123067115" at="38,21,41,5" concept="2" />
-      <node id="6059868634845687138" at="59,49,62,5" concept="3" />
-      <node id="6059868634845687138" at="75,49,78,5" concept="3" />
-      <node id="6059868634845687138" at="44,0,48,0" concept="9" trace="getPrice_id5goYAEPxwrW#(Lorg/jetbrains/mps/openapi/model/SNode;)I" />
-      <node id="6059868634845687138" at="52,0,56,0" concept="4" trace="initNode#(Lorg/jetbrains/mps/openapi/model/SNode;Ljetbrains/mps/core/aspects/behaviour/api/SConstructor;[Ljava/lang/Object;)V" />
-      <node id="6059868634845687138" at="78,5,82,5" concept="10" />
-      <node id="6059868634845687138" at="85,0,90,0" concept="4" trace="getDeclaredMethods#()Ljava/util/List;" />
-      <node id="6059868634845687138" at="91,0,96,0" concept="4" trace="getConcept#()Lorg/jetbrains/mps/openapi/language/SAbstractConcept;" />
-      <node id="6059868634845687138" at="37,0,44,0" concept="9" trace="getExpenses_id66xXmRs9di7#(Lorg/jetbrains/mps/openapi/model/SNode;)I" />
-      <node id="6059868634845687138" at="62,5,70,5" concept="10" />
-      <node id="6059868634845687138" at="73,0,84,0" concept="4" trace="invokeSpecial0#(Lorg/jetbrains/mps/openapi/language/SAbstractConcept;Ljetbrains/mps/core/aspects/behaviour/api/SMethod;[Ljava/lang/Object;)null" />
-      <node id="6059868634845687138" at="57,0,72,0" concept="4" trace="invokeSpecial0#(Lorg/jetbrains/mps/openapi/model/SNode;Ljetbrains/mps/core/aspects/behaviour/api/SMethod;[Ljava/lang/Object;)null" />
-      <scope id="6059868634845687138" at="34,63,34,63" />
-      <scope id="6059868634845687138" at="49,52,49,52" />
-      <scope id="7035173945123067118" at="39,94,40,192" />
-      <scope id="6059868634845687138" at="53,114,54,21" />
-      <scope id="6059868634845687138" at="60,26,61,56" />
-      <scope id="6059868634845687138" at="64,13,65,63" />
-      <scope id="6059868634845687138" at="66,13,67,60" />
-      <scope id="6059868634845687138" at="68,14,69,58" />
-      <scope id="6059868634845687138" at="76,26,77,56" />
-      <scope id="6059868634845687138" at="80,14,81,58" />
-      <scope id="6059868634845687138" at="87,48,88,22" />
-      <scope id="6059868634845687138" at="93,40,94,19" />
-      <scope id="6059868634845687138" at="34,0,36,0">
+      <node id="6059868634845687138" at="26,0,27,0" concept="8" trace="CONCEPT" />
+      <node id="6059868634845687138" at="28,0,29,0" concept="8" trace="getExpenses_id66xXmRs9di7" />
+      <node id="6059868634845687138" at="29,0,30,0" concept="8" trace="getPrice_id5goYAEPxwrW" />
+      <node id="6059868634845687138" at="31,0,32,0" concept="8" trace="BH_METHODS" />
+      <node id="7035173945123082486" at="36,81,37,21" concept="5" />
+      <node id="6059868634846019893" at="38,94,39,192" concept="1" />
+      <node id="6059868634845827618" at="40,5,41,20" concept="6" />
+      <node id="6059868634845957717" at="43,78,44,48" concept="7" />
+      <node id="6059868634845944469" at="44,48,45,105" concept="6" />
+      <node id="6059868634845687138" at="52,114,53,21" concept="1" />
+      <node id="6059868634845687138" at="57,114,58,49" concept="5" />
+      <node id="6059868634845687138" at="59,26,60,56" concept="11" />
+      <node id="6059868634845687138" at="63,13,64,63" concept="6" />
+      <node id="6059868634845687138" at="65,13,66,60" concept="6" />
+      <node id="6059868634845687138" at="67,14,68,58" concept="11" />
+      <node id="6059868634845687138" at="73,128,74,49" concept="5" />
+      <node id="6059868634845687138" at="75,26,76,56" concept="11" />
+      <node id="6059868634845687138" at="79,14,80,58" concept="11" />
+      <node id="6059868634845687138" at="86,48,87,22" concept="6" />
+      <node id="6059868634845687138" at="92,40,93,19" concept="6" />
+      <node id="6059868634845687138" at="97,0,98,0" concept="8" trace="components$gKXn" />
+      <node id="6059868634845687138" at="98,0,99,0" concept="8" trace="component$jgwX" />
+      <node id="6059868634845687138" at="102,0,103,0" concept="8" trace="quantity$jm9l" />
+      <node id="6059868634845687138" at="103,0,104,0" concept="8" trace="price$6NpE" />
+      <node id="6059868634845687138" at="33,0,35,0" concept="9" trace="___init___#(Lorg/jetbrains/mps/openapi/model/SNode;)V" />
+      <node id="6059868634845687138" at="48,0,50,0" concept="0" trace="Garage_Project__BehaviorDescriptor#()V" />
+      <node id="7035173945123067115" at="37,21,40,5" concept="2" />
+      <node id="6059868634845687138" at="58,49,61,5" concept="3" />
+      <node id="6059868634845687138" at="74,49,77,5" concept="3" />
+      <node id="6059868634845687138" at="43,0,47,0" concept="9" trace="getPrice_id5goYAEPxwrW#(Lorg/jetbrains/mps/openapi/model/SNode;)I" />
+      <node id="6059868634845687138" at="51,0,55,0" concept="4" trace="initNode#(Lorg/jetbrains/mps/openapi/model/SNode;Ljetbrains/mps/core/aspects/behaviour/api/SConstructor;[Ljava/lang/Object;)V" />
+      <node id="6059868634845687138" at="77,5,81,5" concept="10" />
+      <node id="6059868634845687138" at="84,0,89,0" concept="4" trace="getDeclaredMethods#()Ljava/util/List;" />
+      <node id="6059868634845687138" at="90,0,95,0" concept="4" trace="getConcept#()Lorg/jetbrains/mps/openapi/language/SAbstractConcept;" />
+      <node id="6059868634845687138" at="36,0,43,0" concept="9" trace="getExpenses_id66xXmRs9di7#(Lorg/jetbrains/mps/openapi/model/SNode;)I" />
+      <node id="6059868634845687138" at="61,5,69,5" concept="10" />
+      <node id="6059868634845687138" at="72,0,83,0" concept="4" trace="invokeSpecial0#(Lorg/jetbrains/mps/openapi/language/SAbstractConcept;Ljetbrains/mps/core/aspects/behaviour/api/SMethod;[Ljava/lang/Object;)null" />
+      <node id="6059868634845687138" at="56,0,71,0" concept="4" trace="invokeSpecial0#(Lorg/jetbrains/mps/openapi/model/SNode;Ljetbrains/mps/core/aspects/behaviour/api/SMethod;[Ljava/lang/Object;)null" />
+      <scope id="6059868634845687138" at="33,63,33,63" />
+      <scope id="6059868634845687138" at="48,52,48,52" />
+      <scope id="7035173945123067118" at="38,94,39,192" />
+      <scope id="6059868634845687138" at="52,114,53,21" />
+      <scope id="6059868634845687138" at="59,26,60,56" />
+      <scope id="6059868634845687138" at="63,13,64,63" />
+      <scope id="6059868634845687138" at="65,13,66,60" />
+      <scope id="6059868634845687138" at="67,14,68,58" />
+      <scope id="6059868634845687138" at="75,26,76,56" />
+      <scope id="6059868634845687138" at="79,14,80,58" />
+      <scope id="6059868634845687138" at="86,48,87,22" />
+      <scope id="6059868634845687138" at="92,40,93,19" />
+      <scope id="6059868634845687138" at="33,0,35,0">
         <var name="__thisNode__" id="6059868634845687138" />
       </scope>
-      <scope id="6059868634845939455" at="44,78,46,105" />
-      <scope id="6059868634845687138" at="49,0,51,0" />
-      <scope id="7035173945123067115" at="38,21,41,5">
+      <scope id="6059868634845939455" at="43,78,45,105" />
+      <scope id="6059868634845687138" at="48,0,50,0" />
+      <scope id="7035173945123067115" at="37,21,40,5">
         <var name="component" id="7035173945123067116" />
       </scope>
-      <scope id="6059868634845687138" at="44,0,48,0">
+      <scope id="6059868634845687138" at="43,0,47,0">
         <var name="__thisNode__" id="6059868634845687138" />
       </scope>
-      <scope id="6059868634845687138" at="52,0,56,0">
+      <scope id="6059868634845687138" at="51,0,55,0">
         <var name="constructor" id="6059868634845687138" />
         <var name="node" id="6059868634845687138" />
         <var name="parameters" id="6059868634845687138" />
       </scope>
-      <scope id="7035173945123067018" at="37,81,42,20">
+      <scope id="7035173945123067018" at="36,81,41,20">
         <var name="expenses" id="7035173945123082489" />
       </scope>
-      <scope id="6059868634845687138" at="85,0,90,0" />
-      <scope id="6059868634845687138" at="91,0,96,0" />
-      <scope id="6059868634845687138" at="37,0,44,0">
+      <scope id="6059868634845687138" at="84,0,89,0" />
+      <scope id="6059868634845687138" at="90,0,95,0" />
+      <scope id="6059868634845687138" at="36,0,43,0">
         <var name="__thisNode__" id="6059868634845687138" />
       </scope>
-      <scope id="6059868634845687138" at="74,128,82,5">
+      <scope id="6059868634845687138" at="73,128,81,5">
         <var name="methodIndex" id="6059868634845687138" />
       </scope>
-      <scope id="6059868634845687138" at="73,0,84,0">
+      <scope id="6059868634845687138" at="72,0,83,0">
         <var name="concept" id="6059868634845687138" />
         <var name="method" id="6059868634845687138" />
         <var name="parameters" id="6059868634845687138" />
       </scope>
-      <scope id="6059868634845687138" at="58,114,70,5">
+      <scope id="6059868634845687138" at="57,114,69,5">
         <var name="methodIndex" id="6059868634845687138" />
       </scope>
-      <scope id="6059868634845687138" at="57,0,72,0">
+      <scope id="6059868634845687138" at="56,0,71,0">
         <var name="method" id="6059868634845687138" />
         <var name="node" id="6059868634845687138" />
         <var name="parameters" id="6059868634845687138" />
       </scope>
-      <unit id="6059868634845687138" at="97,0,101,0" name="Furniture.behavior.Garage_Project__BehaviorDescriptor$LINKS" />
-      <unit id="6059868634845687138" at="102,0,106,0" name="Furniture.behavior.Garage_Project__BehaviorDescriptor$PROPS" />
-      <unit id="6059868634845687138" at="26,0,107,0" name="Furniture.behavior.Garage_Project__BehaviorDescriptor" />
+      <unit id="6059868634845687138" at="96,0,100,0" name="Furniture.behavior.Garage_Project__BehaviorDescriptor$LINKS" />
+      <unit id="6059868634845687138" at="101,0,105,0" name="Furniture.behavior.Garage_Project__BehaviorDescriptor$PROPS" />
+      <unit id="6059868634845687138" at="25,0,106,0" name="Furniture.behavior.Garage_Project__BehaviorDescriptor" />
     </file>
   </root>
 </debug-info>
