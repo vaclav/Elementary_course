@@ -5,6 +5,7 @@
     <use id="479c7a8c-02f9-43b5-9139-d910cb22f298" name="jetbrains.mps.core.xml" version="0" />
     <use id="16004811-92b0-449f-957c-57094436be28" name="HTML" version="0" />
     <use id="b9f4bf86-0f3d-4271-8f07-abe516407b4a" name="CSS" version="0" />
+    <use id="b401a680-8325-4110-8fd3-84331ff25bef" name="jetbrains.mps.lang.generator" version="4" />
     <devkit ref="a2eb3a43-fcc2-4200-80dc-c60110c4862d(jetbrains.mps.devkit.templates)" />
   </languages>
   <imports>
@@ -556,6 +557,22 @@
     </node>
     <node concept="n94m4" id="7vyus25LPSZ" role="lGtFl">
       <ref role="n9lRv" to="wkqd:5goYAEPwo3K" resolve="Garage_Project" />
+    </node>
+    <node concept="17Uvod" id="3Ka3c2Z_G_d" role="lGtFl">
+      <property role="2qtEX9" value="name" />
+      <property role="P4ACc" value="ceab5195-25ea-4f22-9b92-103b95ca8c0c/1169194658468/1169194664001" />
+      <node concept="3zFVjK" id="3Ka3c2Z_G_e" role="3zH0cK">
+        <node concept="3clFbS" id="3Ka3c2Z_G_f" role="2VODD2">
+          <node concept="3clFbF" id="3Ka3c2Z_GGD" role="3cqZAp">
+            <node concept="2OqwBi" id="3Ka3c2Z_GT9" role="3clFbG">
+              <node concept="30H73N" id="3Ka3c2Z_GGC" role="2Oq$k0" />
+              <node concept="3TrcHB" id="3Ka3c2Z_H7W" role="2OqNvi">
+                <ref role="3TsBF5" to="tpck:h0TrG11" resolve="name" />
+              </node>
+            </node>
+          </node>
+        </node>
+      </node>
     </node>
   </node>
   <node concept="1fV19U" id="7Vs6YIHR131">
