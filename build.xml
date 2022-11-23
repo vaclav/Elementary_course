@@ -38,40 +38,42 @@
   <target name="assemble" depends="classes, declare-mps-tasks">
     <mkdir dir="${build.layout}" />
     <mkdir dir="${build.tmp}/default/Basic_CSS.zip" />
-    <mkdir dir="${build.tmp}/default/Basic_CSS.zip/Basic_CSS" />
-    <mkdir dir="${build.tmp}/default/Basic_CSS.zip/Basic_CSS/META-INF" />
-    <echoxml file="${build.tmp}/default/Basic_CSS.zip/Basic_CSS/META-INF/plugin.xml">
+    <mkdir dir="${build.tmp}/default/Basic_CSS.zip/Basic CSS" />
+    <mkdir dir="${build.tmp}/default/Basic_CSS.zip/Basic CSS/META-INF" />
+    <echoxml file="${build.tmp}/default/Basic_CSS.zip/Basic CSS/META-INF/plugin.xml">
       <idea-plugin xmlns:xi="http://www.w3.org/2001/XInclude">
         <id>Basic_CSS</id>
-        <name>Basic_CSS</name>
+        <name>Basic CSS</name>
         <version>1.0</version>
         <depends>jetbrains.mps.core</depends>
+        <depends>com.intellij.modules.platform</depends>
         
         <extensions defaultExtensionNs="com.intellij">
           <mps.LanguageLibrary dir="/languages" />
         </extensions>
       </idea-plugin>
     </echoxml>
-    <mkdir dir="${build.tmp}/default/Basic_CSS.zip/Basic_CSS/lib" />
-    <mkdir dir="${build.tmp}/default/Basic_CSS.jar" />
-    <mkdir dir="${build.tmp}/default/Basic_CSS.jar/META-INF" />
-    <echoxml file="${build.tmp}/default/Basic_CSS.jar/META-INF/plugin.xml">
+    <mkdir dir="${build.tmp}/default/Basic_CSS.zip/Basic CSS/lib" />
+    <mkdir dir="${build.tmp}/default/Basic CSS.jar" />
+    <mkdir dir="${build.tmp}/default/Basic CSS.jar/META-INF" />
+    <echoxml file="${build.tmp}/default/Basic CSS.jar/META-INF/plugin.xml">
       <idea-plugin xmlns:xi="http://www.w3.org/2001/XInclude">
         <id>Basic_CSS</id>
-        <name>Basic_CSS</name>
+        <name>Basic CSS</name>
         <version>1.0</version>
         <depends>jetbrains.mps.core</depends>
+        <depends>com.intellij.modules.platform</depends>
         
         <extensions defaultExtensionNs="com.intellij">
           <mps.LanguageLibrary dir="/languages" />
         </extensions>
       </idea-plugin>
     </echoxml>
-    <jar destfile="${build.tmp}/default/Basic_CSS.zip/Basic_CSS/lib/Basic_CSS.jar" duplicate="preserve">
-      <fileset dir="${build.tmp}/default/Basic_CSS.jar" />
+    <jar destfile="${build.tmp}/default/Basic_CSS.zip/Basic CSS/lib/Basic CSS.jar" duplicate="preserve">
+      <fileset dir="${build.tmp}/default/Basic CSS.jar" />
     </jar>
-    <mkdir dir="${build.tmp}/default/Basic_CSS.zip/Basic_CSS/languages" />
-    <mkdir dir="${build.tmp}/default/Basic_CSS.zip/Basic_CSS/languages/Basic_CSS" />
+    <mkdir dir="${build.tmp}/default/Basic_CSS.zip/Basic CSS/languages" />
+    <mkdir dir="${build.tmp}/default/Basic_CSS.zip/Basic CSS/languages/CSS_Group" />
     <mkdir dir="${build.tmp}/default/CSS.jar" />
     <mkdir dir="${build.tmp}/default/CSS.jar/META-INF" />
     <echoxml file="${build.tmp}/default/CSS.jar/META-INF/module.xml">
@@ -130,7 +132,7 @@
         <sources jar="CSS-src.jar" descriptor="CSS.mpl" />
       </module>
     </echoxml>
-    <jar destfile="${build.tmp}/default/Basic_CSS.zip/Basic_CSS/languages/Basic_CSS/CSS.jar" duplicate="preserve">
+    <jar destfile="${build.tmp}/default/Basic_CSS.zip/Basic CSS/languages/CSS_Group/CSS.jar" duplicate="preserve">
       <fileset dir="${build.tmp}/java/out/CSS" />
       <fileset dir="${basedir}/languages/CSS/source_gen" includes="**/trace.info, **/exports, **/*.mps, **/checkpoints" />
       <fileset dir="${build.tmp}/default/CSS.jar" />
@@ -138,7 +140,7 @@
     <copyModels todir="${build.tmp}/customProcessors/copyModels/languages-CSS-models">
       <fileset dir="${basedir}/languages/CSS/models" includes="**/*.mps, **/*.mpsr, **/.model" />
     </copyModels>
-    <jar destfile="${build.tmp}/default/Basic_CSS.zip/Basic_CSS/languages/Basic_CSS/CSS-src.jar" duplicate="preserve">
+    <jar destfile="${build.tmp}/default/Basic_CSS.zip/Basic CSS/languages/CSS_Group/CSS-src.jar" duplicate="preserve">
       <fileset dir="${basedir}/languages/CSS/source_gen">
         <exclude name="**/trace.info" />
         <exclude name="**/exports" />
@@ -323,7 +325,6 @@
         <fileset file="${artifacts.mps}/lib/mps-messages-for-rules.jar" />
         <fileset file="${artifacts.mps}/lib/mps-behavior-api.jar" />
         <fileset file="${artifacts.mps}/lib/mps-behavior-runtime.jar" />
-        <fileset file="${artifacts.mps}/lib/mps-boot-util.jar" />
         <fileset file="${artifacts.mps}/lib/mps-closures.jar" />
         <fileset file="${artifacts.mps}/lib/mps-collections.jar" />
         <fileset file="${artifacts.mps}/lib/mps-logging.jar" />
@@ -339,10 +340,15 @@
         <fileset file="${artifacts.mps}/lib/mps-project-check.jar" />
         <fileset file="${artifacts.mps}/lib/mps-textgen.jar" />
         <fileset file="${artifacts.mps}/lib/annotations.jar" />
-        <fileset dir="${artifacts.mps}/lib" includes="*.jar" />
+        <fileset file="${artifacts.mps}/lib/app.jar" />
+        <fileset file="${artifacts.mps}/lib/3rd-party-rt.jar" />
         <fileset file="${artifacts.mps}/lib/util.jar" />
         <fileset file="${artifacts.mps}/lib/util_rt.jar" />
-        <fileset file="${artifacts.mps}/lib/3rd-party-rt.jar" />
+        <fileset file="${artifacts.mps}/lib/forms_rt.jar" />
+        <fileset file="${artifacts.mps}/lib/java-impl.jar" />
+        <fileset file="${artifacts.mps}/lib/jps-model.jar" />
+        <fileset file="${artifacts.mps}/lib/testFramework.jar" />
+        <fileset file="${artifacts.mps}/lib/stats.jar" />
         <fileset file="${artifacts.mps}/languages/baseLanguage/jetbrains.mps.baseLanguage.logging.runtime.jar" />
         <fileset file="${artifacts.mps}/languages/languageDesign/jetbrains.mps.lang.core.jar" />
         <fileset file="${artifacts.mps}/languages/languageDesign/jetbrains.mps.lang.descriptor.aspects.jar" />
