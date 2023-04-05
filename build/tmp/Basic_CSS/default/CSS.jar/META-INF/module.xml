@@ -5,6 +5,7 @@
     <module kind="rt" ref="6ed54515-acc8-4d1e-a16c-9fd6cfe951ea(MPS.Core)" />
     <module kind="rt" ref="1ed103c3-3aa6-49b7-9c21-6765ee11f224(MPS.Editor)" />
     <module kind="rt" ref="8865b7a8-5271-43d3-884c-6fd1d9cfdd34(MPS.OpenAPI)" />
+    <module kind="rt" ref="7124e466-fc92-4803-a656-d7a6b7eb3910(MPS.TextGen)" />
     <module kind="rt" ref="4c6a28d1-2c60-478d-b36e-db9b3cbb21fb(closures.runtime)" />
     <module kind="rt" ref="9b80526e-f0bf-4992-bdf5-cee39c1833f3(collections.runtime)" />
     <module kind="rt" ref="a3e4657f-a76c-45bb-bbda-c764596ecc65(jetbrains.mps.baseLanguage.logging.runtime)" />
@@ -16,6 +17,7 @@
     <module kind="rt" ref="0a98f3e2-decf-4e97-bf80-9109eccc59bb(jetbrains.mps.lang.feedback.problem.rules)" />
     <module kind="rt" ref="d7eb0a2a-bd50-4576-beae-e4a89db35f20(jetbrains.mps.lang.scopes.runtime)" />
     <module kind="rt" ref="9a4afe51-f114-4595-b5df-048ce3c596be(jetbrains.mps.runtime)" />
+    <module kind="cl" ref="ceab5195-25ea-4f22-9b92-103b95ca8c0c(jetbrains.mps.lang.core)" />
     <module kind="cl" ref="a9e4c532-c5f5-4bb7-99ef-42abb73bbb70(jetbrains.mps.lang.descriptor.aspects)" />
   </dependencies>
   <uses>
@@ -28,6 +30,7 @@
     <language id="l:aee9cad2-acd4-4608-aef2-0004f6a1cdbd:jetbrains.mps.lang.actions" />
     <language id="l:af65afd8-f0dd-4942-87d9-63a55f2a9db1:jetbrains.mps.lang.behavior" />
     <language id="l:3f4bc5f5-c6c1-4a28-8b10-c83066ffa4a1:jetbrains.mps.lang.constraints" />
+    <language id="l:e51810c5-7308-4642-bcb6-469e61b5dd18:jetbrains.mps.lang.constraints.msg.specification" />
     <language id="l:47257bf3-78d3-470b-89d9-8c3261a61d15:jetbrains.mps.lang.constraints.rules" />
     <language id="l:5dae8159-ab99-46bb-a40d-0cee30ee7018:jetbrains.mps.lang.constraints.rules.kinds" />
     <language id="l:134c38d4-e3af-4d9e-b069-1c7df0a4005d:jetbrains.mps.lang.constraints.rules.skeleton" />

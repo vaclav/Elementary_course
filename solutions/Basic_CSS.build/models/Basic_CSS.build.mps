@@ -123,7 +123,7 @@
       <property role="TrG5h" value="mps_home" />
     </node>
     <node concept="2sgV4H" id="7tHfRP43B4o" role="1l3spa">
-      <ref role="1l3spb" to="ffeo:3IKDaVZmzS6" />
+      <ref role="1l3spb" to="ffeo:3IKDaVZmzS6" resolve="mps" />
       <node concept="398BVA" id="7tHfRP43B4p" role="2JcizS">
         <ref role="398BVh" node="7tHfRP43B4n" resolve="mps_home" />
       </node>
@@ -136,7 +136,7 @@
           </node>
         </node>
         <node concept="m$_wl" id="7tHfRP43B4Q" role="39821P">
-          <ref role="m_rDy" node="7tHfRP43B4_" resolve="Elementary" />
+          <ref role="m_rDy" node="7tHfRP43B4_" resolve="Basic_CSS" />
           <node concept="pUk6x" id="7tHfRP43B4R" role="pUk7w" />
         </node>
       </node>
@@ -154,10 +154,10 @@
         </node>
       </node>
       <node concept="m$f5U" id="7tHfRP43B4E" role="m$_yh">
-        <ref role="m$f5T" node="7tHfRP43B4$" resolve="Elementary" />
+        <ref role="m$f5T" node="7tHfRP43B4$" resolve="CSS_Group" />
       </node>
       <node concept="m$_yC" id="7tHfRP43B4F" role="m$_yJ">
-        <ref role="m$_y1" to="ffeo:4k71ibbKLe8" />
+        <ref role="m$_y1" to="ffeo:4k71ibbKLe8" resolve="jetbrains.mps.core" />
       </node>
       <node concept="3_J27D" id="7tHfRP43B4G" role="m_cZH">
         <node concept="3Mxwew" id="7tHfRP43B4H" role="3MwsjC">
