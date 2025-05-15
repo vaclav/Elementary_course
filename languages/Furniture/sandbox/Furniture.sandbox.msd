@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<solution name="Furniture.sandbox" uuid="cc4e9663-30af-4efd-8936-9b33bc9dc37f" moduleVersion="0" compileInMPS="true">
+<solution name="Furniture.sandbox" uuid="cc4e9663-30af-4efd-8936-9b33bc9dc37f" moduleVersion="0">
   <models>
     <modelRoot contentPath="${module}" type="default">
       <sourceRoot location="models" />
@@ -10,7 +10,6 @@
       <classes generated="true" path="${module}/classes_gen" />
     </facet>
   </facets>
-  <sourcePath />
   <languageVersions>
     <language slang="l:ba1c46a5-4820-45d5-9b2c-6521c394c581:Furniture" version="0" />
     <language slang="l:37d7bb28-9ffc-4389-b0e7-47f1bf5b693c:HTML" version="0" />
